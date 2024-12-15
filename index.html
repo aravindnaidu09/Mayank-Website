@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Mayank Infra Developers</title>
-    <link rel="icon" type="image/x-icon" href="./assets/images/MayankLogo.png">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
-    <link href="./dist/output.css" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projects - Mayank Infra Developers</title>
+        <link rel="icon" type="image/x-icon"
+            href="./assets/images/MayankLogo.png">
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+            rel="stylesheet">
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap"
+            rel="stylesheet">
+        <script
+            src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+        <link href="./dist/output.css" rel="stylesheet">
 
-    <style>
+        <style>
         body {
             font-family: 'Maven Pro', sans-serif;
         }
@@ -39,225 +47,304 @@
                 opacity: 1;
             }
         }
-    </style>
-</head>
+                    .show {
+            display: none;
+            }
 
-<body class="bg-gray-50 text-[#011E4A]">
-    <!-- Navbar Section -->
-    <nav id="navbar"
-        class="bg-transparent text-[#011E4A]  shadow-md font-maven fixed top-0 left-0 w-full z-50 transition duration-300 ease-in-out">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-            <!-- Logo Section -->
-        <div class="text-lg font-bold">
-            <img src="./assets/Images/MayankLogo.png" style="width: 5rem;" alt="Logo" class="mx-auto">
-           </div>
-           <p class="flex-auto px-3.5">Mayank Infro Developers</p>
-            <!-- Navigation Links -->
-            <div class="space-x-6 hidden lg:block md:block">
+            .hide {
+            display: block;
+            }
+            @media screen and (min-width: 768px) {
+            .show {
+                display: block; /* Show the .show class */
+            }
+
+            .hide {
+                display: none; /* Hide the .hide class */
+            }
+        }
+    </style>
+        <script>
+        module.exports = {
+                theme: {
+                    screens: {
+                    sm: '640px',
+                    md: '768px',
+                    lg: '1024px', // Ensure this breakpoint exists
+                    xl: '1280px',
+                    },
+                },
+                };
+    </script>
+    </head>
+
+    <body class="bg-gray-50 text-[#011E4A]">
+        <!-- Navbar Section -->
+        <nav id="navbar"
+            class="bg-transparent text-[#011E4A]  shadow-md font-maven fixed top-0 left-0 w-full z-50 transition duration-300 ease-in-out">
+            <div
+                class="container mx-auto px-4 flex justify-between items-center">
+                <!-- Logo Section -->
+                <div class="text-lg font-bold">
+                    <img src="./assets/Images/MayankLogo.png"
+                        style="width: 5rem;" alt="Logo" class="mx-auto">
+                </div>
+                <p class="flex-auto px-3.5">Mayank Infro Developers</p>
+                <!-- Navigation Links -->
+                <div class="show lg:block space-x-6" id>
+                    <a href="index.html"
+                        class="relative inline-block text-[#011E4A] hover:text-gold transition duration-300">
+                        Home
+                        <span
+                            class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
+                    </a>
+                    <a href="projects.html"
+                        class="relative inline-block text-[#011E4A] hover:text-gold transition duration-300">
+                        Projects
+                        <span
+                            class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
+                    </a>
+                    <a href="about-us.html"
+                        class="relative inline-block text-[#011E4A] hover:text-gold transition duration-300">
+                        About Us
+                        <span
+                            class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
+                    </a>
+                    <a href="#contact"
+                        class="relative inline-block text-[#011E4A] hover:text-gold transition duration-300">
+                        Contact Us
+                        <span
+                            class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div id="navBar"
+            class="bg-white shadow border-b sticky top-16 rounded-full z-50 transition duration-300 ease-in-out md:hidden">
+            <div
+                class="flex justify-between items-center overflow-x-auto whitespace-nowrap px-4 py-2">
                 <a href="index.html"
-                    class="relative inline-block text-[#011E4A] hover:text-gold transition duration-300">
+                    class="relative inline-block text-[#011E4A] transition duration-300 hover:text-gold hover:-translate-y-1">
                     Home
                     <span
                         class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
                 </a>
                 <a href="projects.html"
-                    class="relative inline-block text-[#011E4A] hover:text-gold transition duration-300">
+                    class="relative inline-block text-[#011E4A] transition duration-300 hover:text-gold hover:-translate-y-1">
                     Projects
                     <span
                         class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
                 </a>
                 <a href="about-us.html"
-                    class="relative inline-block text-[#011E4A] hover:text-gold transition duration-300">
+                    class="relative inline-block text-[#011E4A] transition duration-300 hover:text-gold hover:-translate-y-1">
                     About Us
                     <span
                         class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
                 </a>
-                <a href="#contact" class="relative inline-block text-[#011E4A] hover:text-gold transition duration-300">
+                <a href="#contact"
+                    class="relative inline-block text-[#011E4A] transition duration-300 hover:text-gold hover:-translate-y-1">
                     Contact Us
                     <span
                         class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
                 </a>
             </div>
         </div>
-    </nav>
-    <div id="navBar" class="bg-white shadow border-b sticky top-16 rounded-full z-50 transition duration-300 ease-in-out md:hidden">
-        <div class="flex justify-between items-center overflow-x-auto whitespace-nowrap px-4 py-2">
-            <a href="index.html"
-            class="relative inline-block text-[#011E4A] transition duration-300 hover:text-gold hover:-translate-y-1">
-            Home
-            <span
-                class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
-        </a>
-        <a href="projects.html"
-            class="relative inline-block text-[#011E4A] transition duration-300 hover:text-gold hover:-translate-y-1">
-            Projects
-            <span
-                class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
-        </a>
-        <a href="about-us.html"
-            class="relative inline-block text-[#011E4A] transition duration-300 hover:text-gold hover:-translate-y-1">
-            About Us
-            <span
-                class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
-        </a>
-        <a href="#contact"
-            class="relative inline-block text-[#011E4A] transition duration-300 hover:text-gold hover:-translate-y-1">
-            Contact Us
-            <span
-                class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
-        </a>  
-        </div>
-      </div>
-    <!-- Hero Section -->
-    <section class="relative bg-gray-50 mt-16">
-        <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center h-screen h-auto" style="max-height: fit-content;">
-            <!-- Text Content -->
-            <div class="w-full lg:w-1/2 text-center lg:text-left">
-                <h1 class="text-5xl font-bold text-[#011E4A] fade-in">Omkara Projects</h1>
-                <p class="text-xl text-gray-600 mt-4 fade-in delay-200">
-                    Luxurious Villa Plots at Zaheerabad
-                </p>
-            </div>
-            <!-- Hero Image -->
-            <div class="w-full lg:w-1/2">
-                <div class="relative">
-                    <img src="./assets/images/projects-hero-image.jpg" alt="Omkara Projects Hero Image"
-                        class="w-full h-full object-cover rounded-lg shadow-lg">
-                    <div class="absolute inset-0 bg-black opacity-30 rounded-lg"></div>
+        <!-- Hero Section -->
+        <section class="relative bg-gray-50 mt-16">
+            <div
+                class="container mx-auto px-4 flex flex-col lg:flex-row items-center h-screen h-auto"
+                style="max-height: fit-content;">
+                <!-- Text Content -->
+                <div class="w-full lg:w-1/2 text-center lg:text-left">
+                    <h1 class="text-5xl font-bold text-[#011E4A] fade-in">Omkara
+                        Projects</h1>
+                    <p class="text-xl text-gray-600 mt-4 fade-in delay-200">
+                        Luxurious Villa Plots at Zaheerabad
+                    </p>
+                </div>
+                <!-- Hero Image -->
+                <div class="w-full lg:w-1/2">
+                    <div class="relative">
+                        <img src="./assets/images/projects-hero-image.jpg"
+                            alt="Omkara Projects Hero Image"
+                            class="w-full h-full object-cover rounded-lg shadow-lg">
+                        <div
+                            class="absolute inset-0 bg-black opacity-30 rounded-lg"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-
-    <!-- Project Features Section -->
-    <section class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center fade-in">Where Opportunities Meet Infrastructure</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 fade-in delay-200">
-                <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
-                    <i class="fas fa-road text-3xl text-gold mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">CC Roads</h3>
-                    <p class="text-gray-600">Well-planned and high-quality concrete roads for convenient access.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
-                    <i class="fas fa-tree text-3xl text-gold mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Avenue Plantation</h3>
-                    <p class="text-gray-600">Beautifully landscaped plantations along all the roads.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
-                    <i class="fas fa-water text-3xl text-gold mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Water Tank</h3>
-                    <p class="text-gray-600">State-of-the-art water tank ensuring continuous water supply.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
-                    <i class="fas fa-play text-3xl text-gold mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Children's Play Area</h3>
-                    <p class="text-gray-600">Dedicated spaces for kids to play and enjoy safely.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
-                    <i class="fas fa-seedling text-3xl text-gold mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Underground Drainage</h3>
-                    <p class="text-gray-600">Well-maintained drainage systems for clean surroundings.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
-                    <i class="fas fa-tint text-3xl text-gold mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Water Lines</h3>
-                    <p class="text-gray-600">Advanced infrastructure for uninterrupted water services.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Layout Plan Section -->
-    <section class="py-16 bg-blue-50">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center fade-in">Layout Plan</h2>
-            <p class="text-center text-gray-600 mt-2 fade-in delay-100">
-                Discover the thoughtfully designed layout for a harmonious living experience.
-            </p>
-            <div class="mt-8 relative fade-in delay-200">
-                <div class="overflow-hidden rounded-lg shadow-lg">
-                    <!-- Add subtle zoom-in animation -->
-                    <img src="./assets/images/layout-plan.jpg" alt="Layout Plan"
-                        class="w-full h-auto transition-transform duration-700 hover:scale-105">
-                </div>
-                <!-- Add overlay effect -->
+        <!-- Project Features Section -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center fade-in">Where
+                    Opportunities Meet Infrastructure</h2>
                 <div
-                    class="absolute inset-0 bg-gradient-to-t from-blue-900 via-transparent to-transparent opacity-0 hover:opacity-40 transition-opacity duration-500 rounded-lg">
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 fade-in delay-200">
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
+                        <i class="fas fa-road text-3xl text-gold mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">CC Roads</h3>
+                        <p class="text-gray-600">Well-planned and high-quality
+                            concrete roads for convenient access.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
+                        <i class="fas fa-tree text-3xl text-gold mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Avenue
+                            Plantation</h3>
+                        <p class="text-gray-600">Beautifully landscaped
+                            plantations along all the roads.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
+                        <i class="fas fa-water text-3xl text-gold mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Water Tank</h3>
+                        <p class="text-gray-600">State-of-the-art water tank
+                            ensuring continuous water supply.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
+                        <i class="fas fa-play text-3xl text-gold mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Children's Play
+                            Area</h3>
+                        <p class="text-gray-600">Dedicated spaces for kids to
+                            play and enjoy safely.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
+                        <i class="fas fa-seedling text-3xl text-gold mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Underground
+                            Drainage</h3>
+                        <p class="text-gray-600">Well-maintained drainage
+                            systems for clean surroundings.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
+                        <i class="fas fa-tint text-3xl text-gold mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Water Lines</h3>
+                        <p class="text-gray-600">Advanced infrastructure for
+                            uninterrupted water services.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+        <!-- Layout Plan Section -->
+        <section class="py-16 bg-blue-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center fade-in">Layout
+                    Plan</h2>
+                <p class="text-center text-gray-600 mt-2 fade-in delay-100">
+                    Discover the thoughtfully designed layout for a harmonious
+                    living experience.
+                </p>
+                <div class="mt-8 relative fade-in delay-200">
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <!-- Add subtle zoom-in animation -->
+                        <img src="./assets/images/layout-plan.jpg"
+                            alt="Layout Plan"
+                            class="w-full h-auto transition-transform duration-700 hover:scale-105">
+                    </div>
+                    <!-- Add overlay effect -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-blue-900 via-transparent to-transparent opacity-0 hover:opacity-40 transition-opacity duration-500 rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Footer Section -->
-    <section id="contact">
-        <footer class="bg-[#011E4A] text-white py-10">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                    <!-- Logo and Social Links -->
-                    <div>
-                        <div class="flex items-center mb-6">
-                            <div class="bg-white rounded-full w-16 h-16 flex items-center justify-center mr-4">
-                                <img src="./assets/images/MayankLogo.png" alt="Mayank Logo" class="w-10 h-10" />
+        <!-- Footer Section -->
+        <section id="contact">
+            <footer class="bg-[#011E4A] text-white py-10">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                        <!-- Logo and Social Links -->
+                        <div>
+                            <div class="flex items-center mb-6">
+                                <div
+                                    class="bg-white rounded-full w-16 h-16 flex items-center justify-center mr-4">
+                                    <img src="./assets/images/MayankLogo.png"
+                                        alt="Mayank Logo" class="w-10 h-10" />
+                                </div>
+                                <h2 class="text-xl font-bold">Mayank Infra
+                                    Developers</h2>
                             </div>
-                            <h2 class="text-xl font-bold">Mayank Infra Developers</h2>
-                        </div>
-                        <div class="flex space-x-4 mb-6">
-                            <p>Follow us on :
-                                <span class="flex"> 
-                                    <img style="padding: 0.10rem;" onclick="window.open('http://www.google.com', '_blank');" src="./assets/Icons/facebook.png" width="5%">
-                                    <img style="padding: 0.10rem;" onclick="window.open('http://www.google.com', '_blank');" src="./assets/Icons/instagram.png" width="5%">
-                                    <img style="padding: 0.10rem;" onclick="window.open('http://www.google.com', '_blank');" src="./assets/Icons/twitter.png" width="5%">
-                                    <img style="padding: 0.10rem;" onclick="window.open('http://www.google.com', '_blank');" src="./assets/Icons/whatsapp.png" width="5%">
-                                    <img style="padding: 0.10rem;" onclick="window.open('http://www.google.com', '_blank');" src="./assets/Icons/youtube.png" width="5%">
-                                </span>
-                        </div>
-                        <div class="relative mt-6">
-                            <form class="flex">
-                                <input type="email" placeholder="Enter Email"
-                                    class="flex-1 px-4 py-2 text-gray-700 rounded-full focus:outline-none" />
-                                <button type="submit"
-                                    class="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-4 py-2 ml-2 animate-bounce-on-hover">
-                                    <i class="fas fa-arrow-right"></i>
-                                </button>
-                            </form>
+                            <div class="flex space-x-4 mb-6">
+                                <p>Follow us on :
+                                    <span class="flex">
+                                        <img style="padding: 0.10rem;"
+                                            onclick="window.open('http://www.google.com', '_blank');"
+                                            src="./assets/Icons/facebook.png"
+                                            width="5%">
+                                        <img style="padding: 0.10rem;"
+                                            onclick="window.open('http://www.google.com', '_blank');"
+                                            src="./assets/Icons/instagram.png"
+                                            width="5%">
+                                        <img style="padding: 0.10rem;"
+                                            onclick="window.open('http://www.google.com', '_blank');"
+                                            src="./assets/Icons/twitter.png"
+                                            width="5%">
+                                        <img style="padding: 0.10rem;"
+                                            onclick="window.open('http://www.google.com', '_blank');"
+                                            src="./assets/Icons/whatsapp.png"
+                                            width="5%">
+                                        <img style="padding: 0.10rem;"
+                                            onclick="window.open('http://www.google.com', '_blank');"
+                                            src="./assets/Icons/youtube.png"
+                                            width="5%">
+                                    </span>
+                                </div>
+                                <div class="relative mt-6">
+                                    <form class="flex">
+                                        <input type="email"
+                                            placeholder="Enter Email"
+                                            class="flex-1 px-4 py-2 text-gray-700 rounded-full focus:outline-none" />
+                                        <button type="submit"
+                                            class="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-4 py-2 ml-2 animate-bounce-on-hover">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- Company Links -->
+                            <div>
+                                <h3 class="text-lg font-bold mb-4">Company</h3>
+                                <ul class="space-y-2">
+                                    <li><a href="#"
+                                            class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                                    <li><a href="#"
+                                            class="text-gray-400 hover:text-white transition duration-300">Projects</a>
+                                    </li>
+                                    <li><a href="#"
+                                            class="text-gray-400 hover:text-white transition duration-300">About
+                                            Us</a>
+                                    </li>
+                                    <li><a href="#"
+                                            class="text-gray-400 hover:text-white transition duration-300">Contact
+                                            Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Contact Information -->
+                            <div>
+                                <h3 class="text-lg font-bold mb-4">Contact
+                                    Us</h3>
+                                <p class="text-gray-400 mb-2">D3T Tech Hub, Plot
+                                    No 5 & 6, 4th Floor</p>
+                                <p class="text-gray-400 mb-2">Silicon Valley,
+                                    Madhapur</p>
+                                <p class="text-gray-400 mb-2">Hyderabad,
+                                    Telangana, 500081</p>
+                                <a href="mailto:info@mayankinfra.com"
+                                    class="text-gray-400 hover:text-white transition duration-300">
+                                    info@mayankinfra.com
+                                </a>
+                                <!-- <p class="text-gray-400 mt-2">+1(888)-123-4587</p> -->
+                            </div>
                         </div>
                     </div>
-                    <!-- Company Links -->
-                    <div>
-                        <h3 class="text-lg font-bold mb-4">Company</h3>
-                        <ul class="space-y-2">
-                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
-                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Projects</a>
-                            </li>
-                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">About Us</a>
-                            </li>
-                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Contact
-                                    Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Contact Information -->
-                    <div>
-                        <h3 class="text-lg font-bold mb-4">Contact Us</h3>
-                        <p class="text-gray-400 mb-2">D3T Tech Hub, Plot No 5 & 6, 4th Floor</p>
-                        <p class="text-gray-400 mb-2">Silicon Valley, Madhapur</p>
-                        <p class="text-gray-400 mb-2">Hyderabad, Telangana, 500081</p>
-                        <a href="mailto:info@mayankinfra.com"
-                            class="text-gray-400 hover:text-white transition duration-300">
-                            info@mayankinfra.com
-                        </a>
-                        <!-- <p class="text-gray-400 mt-2">+1(888)-123-4587</p> -->
-                    </div>
-                </div>
-            </div>
-        </footer>
+                </footer>
 
-    </section>
+            </section>
 
-    <script>
+            <script>
         ScrollReveal().reveal('.fade-in', { delay: 300, distance: '50px', duration: 1000, easing: 'cubic-bezier(0.5, 0, 0, 1)' });
 
         window.addEventListener("scroll", function () {
@@ -271,7 +358,7 @@
             }
         });
     </script>
-    <script>
+            <script>
         const navBar = document.getElementById('navBar');
         let isVisible = true; // Track if the navbar is currently visible
         let fadeTimeout;
@@ -305,6 +392,6 @@
           showNavBar();
         });
       </script>
-</body>
+        </body>
 
-</html>
+    </html>

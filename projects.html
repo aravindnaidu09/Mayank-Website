@@ -117,6 +117,22 @@
             transform: rotateY(180deg);
             z-index: 1;
         }
+        .show {
+            display: none;
+            }
+
+            .hide {
+            display: block;
+            }
+            @media screen and (min-width: 768px) {
+            .show {
+                display: block; /* Show the .show class */
+            }
+
+            .hide {
+                display: none; /* Hide the .hide class */
+            }
+        }
     </style>
 </head>
 
@@ -131,7 +147,7 @@
            </div>
            <p class="flex-auto px-3.5">Mayank Infro Developers</p>
             <!-- Navigation Links -->
-             <div id="nav-links" class="space-x-6 hidden lg:block md:block">
+             <div id="nav-links" class="space-x-6 show lg:block">
                 <a href="index.html"
                     class="relative inline-block text-[#011E4A] transition duration-300 hover:text-gold hover:-translate-y-1">
                     Home
@@ -160,7 +176,7 @@
             
         </div>
     </nav>
-    <div id="navBar" class="bg-white shadow border-b sticky top-16 rounded-full z-50 transition duration-300 ease-in-out md:hidden">
+    <div id="navBar" class="bg-white shadow-md font-maven border-b sticky top-16 rounded-full z-50 transition duration-300 ease-in-out md:hidden">
         <div class="flex justify-between items-center overflow-x-auto whitespace-nowrap px-4 py-2">
             <a href="index.html"
             class="relative inline-block text-[#011E4A] transition duration-300 hover:text-gold hover:-translate-y-1">

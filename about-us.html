@@ -360,6 +360,22 @@
             top:3.8Rem !important;
             width: auto;
         }
+        .show {
+            display: none;
+            }
+
+            .hide {
+            display: block;
+            }
+            @media screen and (min-width: 768px) {
+            .show {
+                display: block; /* Show the .show class */
+            }
+
+            .hide {
+                display: none; /* Hide the .hide class */
+            }
+        }
     </style>
 </head>
 
@@ -376,7 +392,7 @@
            </div>
            <p class="flex-auto px-3.5">Mayank Infro Developers</p>
             <!-- Navigation Links -->
-            <div id="nav-links" class="space-x-6 hidden lg:block md:block">
+            <div id="nav-links" class="space-x-6 show lg:block">
                 <a href="index.html" class="relative inline-block text-[#011E4A] hover:text-gold transition duration-300">
                     Home
                     <span
