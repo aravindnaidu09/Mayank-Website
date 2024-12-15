@@ -16,45 +16,349 @@
             font-family: 'Maven Pro', sans-serif;
         }
 
-        .fade-in {
-            opacity: 0;
-            animation: fadeIn 1s ease-in-out forwards;
+        .text-underline {
+            position: relative;
+            color: #A57D42;
+            display: inline-block;
         }
 
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
+        .svg-underline {
+            position: absolute;
+            bottom: -16px;
+            /* Adjust this for spacing */
+            left: 0;
+            width: 100%;
+            height: auto;
         }
 
-        .hover-scale {
-            transition: transform 0.3s ease-in-out;
+        /* Container for the section */
+        .why-choose-us {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 50px 20px;
+            background-color: #fff;
+            position: relative;
         }
 
-        .hover-scale:hover {
-            transform: scale(1.05);
+        /* Content Container */
+        .content-container {
+            display: grid;
+            max-width: 1200px;
+            width: 100%;
+            gap: 50px;
         }
 
-        .fade-up {
-            opacity: 0;
+        /* Left Content */
+        .left-content {
+            flex: 1;
+            text-align: center;
+        }
+
+        .left-content h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .left-content h2 .highlight {
+            color: #a57d42;
+            font-weight: 800;
+        }
+
+        .left-content p {
+            margin-top: 15px;
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        /* Right Content */
+        .right-content {
+            flex: 1.5;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        /* Curved Dotted Line */
+        .curved-line {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            width: 100%;
+            height: 300px;
+            z-index: -1;
+        }
+
+        /* Card Container */
+        .card {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 30%;
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card-up {
+            transform: translateY(-30px);
+        }
+
+        .card-down {
             transform: translateY(30px);
-            animation: fadeUp 0.8s ease-in-out forwards;
         }
 
-        @keyframes fadeUp {
-            0% {
-                opacity: 0;
-                transform: translateY(30px);
-            }
+        .card:hover {
+            transform: scale(1.08);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
 
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        /* Icon Container */
+        .icon-container {
+            width: 60px;
+            height: 60px;
+            background-color: #a57d42;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        /* Card Title */
+        .card h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        /* Card Description */
+        .card p {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .company-culture {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            color: #2b3a5b;
+        }
+
+        .header p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Mission and Vision Cards */
+        .content {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .company-culture.card {
+            background-color: #e3eaf0;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            flex: 1;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .company-culture.card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .company-culture.card h2 {
+            font-size: 1.5rem;
+            color: #2b3a5b;
+            margin-bottom: 10px;
+        }
+
+        .company-culture.card p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .company-culture.card img {
+            width: 50px;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        /* Mission Specific Styles */
+        .mission {
+            background-color: #e3f2fd;
+            border-left: 5px solid #2196f3;
+        }
+
+        /* Vision Specific Styles */
+        .vision {
+            background-color: #e8f5e9;
+            border-left: 5px solid #4caf50;
+        }
+
+        /* Chairman Card Styles */
+        .chairman-card {
+            position: relative;
+            width: 80%;
+            height: 30vh;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .chairman-card-img {
+            width: 20%;
+            height: 35vh;
+        }
+
+        .chairman-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Card Header */
+        .card-header {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Centering the Container */
+        .chairman-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            /* Full viewport height */
+            padding: 20px;
+            /* Add breathing space on all sides */
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+            /* Optional: Light background color */
+        }
+
+        /* Chairman Card Styles */
+        .chairman-card {
+            position: relative;
+            width: 80%;
+            height: 35vh;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            background-color: #fff;
+            margin: 0 auto;
+        }
+
+        .chairman-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Card Header */
+        .card-header {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .chairman-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        /* Card Body */
+        .card-body {
+            padding: 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .card-body h3 {
+            font-size: 1.5rem;
+            color: #2b3a5b;
+            margin-bottom: 10px;
+        }
+
+        .card-body .brief {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Card Overlay */
+        .card-overlay {
+            position: absolute;
+            bottom: -100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #a57d42;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            transition: bottom 0.3s ease-in-out;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-overlay h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .card-overlay p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #fff;
+        }
+
+        /* Hover Effect */
+        .chairman-card:hover .card-overlay {
+            bottom: 0;
+        }
+        .misssionVision{
+                    display: flex;
+            text-align: center;
+            font-size: larger;
+            font-weight: bolder;
+            align-items: center;
+            gap: 20px;
+                }
+        .Top3Rem{
+            top:3.8Rem !important;
+            width: auto;
         }
     </style>
 </head>
@@ -63,12 +367,14 @@
 
     <!-- Navbar -->
     <nav id="navbar"
-        class="bg-transparent text-[#011E4A] py-4 shadow-md font-maven fixed top-0 left-0 w-full z-50 transition duration-300 ease-in-out">
+        class="bg-transparent text-[#011E4A]  shadow-md font-maven fixed top-0 left-0 w-full z-50 transition duration-300 ease-in-out">
         <div class="container mx-auto px-4 flex justify-between items-center">
             <!-- Logo Section -->
-            <div class="flex items-center space-x-2">
-                <img src="./assets/images/MayankLogo.png" alt="Logo" class="h-8">
-            </div>
+        <div class="text-lg font-bold">
+            <img src="./assets/Images/MayankLogo.png" style="width: 5rem;" alt="Logo" class="mx-auto">
+            
+           </div>
+           <p class="flex-auto px-3.5">Mayank Infro Developers</p>
             <!-- Navigation Links -->
             <div id="nav-links" class="space-x-6">
                 <a href="index.html" class="relative inline-block text-[#011E4A] hover:text-gold transition duration-300">
@@ -96,61 +402,82 @@
             </div>
         </div>
     </nav>
-
-
     <!-- About Us Hero Section -->
-    <section id="aboutUs" class="h-[60vh] bg-cover bg-center relative"
-        style="background-image: url('./assets/Images/About_Us_Hero.jpg');">
-        <div class="absolute inset-0 bg-black opacity-50"></div>
-        <div class="relative h-full flex flex-col justify-center items-center text-center text-white">
-            <h1 class="text-4xl md:text-5xl font-bold fade-in">Welcome to <span class="text-[#A57D42]">Mayank Infra
-                    Developers</span></h1>
-            <p class="mt-4 text-lg md:text-xl fade-up max-w-2xl">
-                Delivering high-class quality projects that offer both luxury and affordability.
-            </p>
-        </div>
-    </section>
+    <section id="aboutUs" class="h-screen bg-cover bg-center relative Top3Rem"
+    style="background-image: url('./assets/Images/About_Us_Hero.jpg');">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="relative h-full flex flex-col justify-center items-center text-center text-white tracking-wider">
+        <h1 class="text-5xl md:text-6xl font-bold">
+            Welcome to <span class="relative text-[#A57D42] !important" style="color: #060049;">
+                Mayank Infra Developers
+                <!-- Accent Circle -->
+                <div class="absolute -top-3 -right-3 w-3 h-3 bg-[#A57D42] rounded-full"></div>
+            </span>
+        </h1>
+        <p class="mt-6 text-lg md:text-xl max-w-3xl">
+            where we believe that true success comes from upholding <b style="color: #060049;">strong moralistic standards</b>, transparent dealings, and a commitment to excellence.
+            We are dedicated to delivering high-class quality projects that offer both luxury and affordability, focusing on properties that stand the test of time.
+        </p>
+    </div>
+</section>
 
-    <!-- Why Choose Us Section -->
-    <section class="py-16">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-[#011E4A] fade-in">Why Choose Us</h2>
-                <p class="text-gray-600 mt-2 fade-up">Discover why our clients trust us to deliver exceptional real
-                    estate opportunities.</p>
+    <!-- Why choose Us Section -->
+    <section class="why-choose-us">
+        <div class="content-container">
+            <!-- Left Content: Why Choose Us -->
+            <div class="left-content">
+                <h2>
+                    Why <span class="highlight">Choose Us</span>
+                </h2>
+                <p>
+                    Discover why our clients trust us to deliver exceptional real estate opportunities.
+                </p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Right Content: Cards -->
+            <div class="right-content">
+                <!-- Curved Dotted Line -->
+                <svg class="curved-line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" fill="none">
+                    <path d="M50 200 Q300 50 600 200 T1150 100" stroke="#A57D42" stroke-width="2"
+                        stroke-dasharray="8, 8" fill="none" />
+                </svg>
+
                 <!-- Card 1 -->
-                <div class="bg-white p-6 rounded-lg shadow-lg hover-scale fade-in delay-200">
-                    <div
-                        class="w-16 h-16 flex items-center justify-center bg-[#A57D42] text-white rounded-full mx-auto mb-4">
-                        <i class="fas fa-user-shield text-2xl"></i>
+                <div class="card card-up">
+                    <div class="icon-container">
+                        <i class="fas fa-user-shield"></i>
                     </div>
-                    <h3 class="text-xl font-semibold text-center mb-2">Transparency and Integrity</h3>
-                    <p class="text-gray-600 text-center">
-                        We ensure transparency and honesty in all dealings to build trust with our clients.
+                    <h3>Transparency and Integrity</h3>
+                    <p>
+                        We are fully transparent with our clients, ensuring that you are always informed and confident
+                        in your
+                        investment. We believe that honesty is the best policy.
                     </p>
                 </div>
+
                 <!-- Card 2 -->
-                <div class="bg-white p-6 rounded-lg shadow-lg hover-scale fade-in delay-400">
-                    <div
-                        class="w-16 h-16 flex items-center justify-center bg-[#A57D42] text-white rounded-full mx-auto mb-4">
-                        <i class="fas fa-heart text-2xl"></i>
+                <div class="card card-down">
+                    <div class="icon-container">
+                        <i class="fas fa-heart"></i>
                     </div>
-                    <h3 class="text-xl font-semibold text-center mb-2">Customer Satisfaction</h3>
-                    <p class="text-gray-600 text-center">
-                        Our clients' satisfaction is our top priority, ensuring value in every project.
+                    <h3>Customer Satisfaction</h3>
+                    <p>
+                        Our clients’ satisfaction is at the core of everything we do. We prioritize your needs and are
+                        committed to
+                        delivering projects that exceed your expectations.
                     </p>
                 </div>
+
                 <!-- Card 3 -->
-                <div class="bg-white p-6 rounded-lg shadow-lg hover-scale fade-in delay-600">
-                    <div
-                        class="w-16 h-16 flex items-center justify-center bg-[#A57D42] text-white rounded-full mx-auto mb-4">
-                        <i class="fas fa-briefcase text-2xl"></i>
+                <div class="card card-up">
+                    <div class="icon-container">
+                        <i class="fas fa-briefcase"></i>
                     </div>
-                    <h3 class="text-xl font-semibold text-center mb-2">Expertise and Experience</h3>
-                    <p class="text-gray-600 text-center">
-                        Leveraging years of experience to deliver high-quality, well-planned developments.
+                    <h3>Expertise and Experience</h3>
+                    <p>
+                        With years of experience in real estate development, our team brings expertise and
+                        professionalism to every
+                        project, ensuring the highest standards of quality.
                     </p>
                 </div>
             </div>
@@ -158,31 +485,97 @@
     </section>
 
     <!-- Mission & Vision Section -->
-    <section class="py-16 bg-blue-50">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-[#011E4A] fade-in">Our Mission & Vision</h2>
+    <section class="company-culture">
+        <!-- Top Header -->
+        <div class="header">
+            <h1>Our Commitment to Quality:</h1>
+            <p>At Mayank Infra Developers, we specialize in offering premium residential and venture plots designed to
+                meet the diverse needs of modern homeowners and investors. Our plots are meticulously planned to provide
+                comfort, luxury, and a prestigious living experience in prime locations, while also serving as perfect
+                opportunities for future investments. By balancing affordability with uncompromising quality, we ensure
+                our properties deliver long-term value, making them ideal for both personal and business growth.
+                Green and Clean Environment: We understand the importance of a clean and sustainable environment. Our
+                projects are meticulously planned with greenery, clean surroundings, and eco-friendly practices,
+                ensuring a serene and healthy living environment for you and your family.
+            </p>
+        </div>
+
+        <!-- Mission and Vision -->
+        <div class="content">
+            <!-- Mission -->
+            <div class="card mission" style="width: 100%;">
+                <h2 class="misssionVision">
+                    <img src="./assets/Icons/target.png" alt="Mission Icon" width="15%">
+                    Our Mission</h2>
+                <ul>
+                    <li><strong>Delivering Excellence:</strong> We focus on delivering high-quality projects that are
+                        not only aesthetically pleasing but also practical and valuable for long-term growth.</li>
+                    <li><strong>Customer-Centric Approach:</strong> Our goal is to ensure complete satisfaction for each
+                        client. We believe in fostering long-term relationships with our clients and making them part of
+                        the Mayank Infra family.</li>
+                    <li><strong>Building Trust:</strong> We understand that buying property is a significant decision.
+                        That’s why we are committed to providing transparent and reliable services that build trust and
+                        confidence in every transaction.</li>
+                </ul>
+                
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Mission -->
-                <div class="bg-white p-6 rounded-lg shadow-lg hover-scale fade-in delay-200">
-                    <h3 class="text-2xl font-bold text-[#A57D42] mb-4">Mission</h3>
-                    <p class="text-gray-600">
-                        Delivering high-quality, luxurious projects with a commitment to transparency and client
-                        satisfaction.
-                    </p>
-                </div>
-                <!-- Vision -->
-                <div class="bg-white p-6 rounded-lg shadow-lg hover-scale fade-in delay-400">
-                    <h3 class="text-2xl font-bold text-[#A57D42] mb-4">Vision</h3>
-                    <p class="text-gray-600">
-                        To be a trusted name in real estate by providing innovative, eco-friendly, and sustainable
-                        solutions.
-                    </p>
-                </div>
+
+            <!-- Vision -->
+            <div class="card vision" style="width: 100%;">
+                <h2 class="misssionVision">
+                    <img src="./assets/Icons/opportunity.png" alt="Vision Icon" width="15%">
+                    Our Vision</h2>
+                <ul>
+                    <li>
+                        <strong>Reach the Pinnacle of Real Estate:</strong> Our goal is to be recognized as one of the
+                        top real estate
+                        developers in the region by providing outstanding properties that cater to the needs of our
+                        customers.
+
+                    </li>
+                    <li>
+                        <strong>Contribute to Society:</strong>
+                        We believe that our success is tied to the prosperity of the communities
+                        we serve. Our projects are designed to not only provide high-quality living spaces but also to
+                        positively impact the city of Hyderabad and its surrounding areas.
+
+                    </li>
+                </ul>
+               
             </div>
         </div>
     </section>
+<section class="chairman-container">
+    <div class="chairman-card-img">
+        <div class="card-header">
+            <img src="./assets/Icons/DummyUser_Male.png" alt="Chairman Image" class="chairman-image">
+        </div>
+    </div>
+    <div class="">
+        <div class="chairman-card">
+           
+            <div class="card-body">
+                <h3><b style="color: #060049;">Chairman and Managing Director</b></h3>
+                <p class="brief"><b style="color: #A57D42;">Balaji Tavatika</b>, the visionary leader behind Mayank Infra Developers, brings over 15 years of experience in Land Retail, Trading, and Construction.</p>
+            </div>
+            <div class="card-overlay">
+                <h3 style="color: #060049;"><b>Chairman and Managing Director - Balaji Tavatika</b></h3>
+                <ul>
+                    <li>The visionary leader behind Mayank Infra Developers is Balaji Tavatika, the Chairman and Managing
+                        Director. With a strong educational background in B.Com and Masters in Business Administration,
+                        Balaji brings over 15 years of experience in Land Retail, Trading, and Construction.</li>
+                    <li>His approach to real estate is built on trust, transparency, and a strong belief in providing his
+                        clients with secure and profitable investment opportunities. Balaji’s leadership and commitment to
+                        quality have been instrumental in positioning Mayank Infra Developers as a trusted name in the real
+                        estate sector.</li>
+                </ul>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</section>
+
 
     <!-- Footer -->
     <section id="contact">
@@ -198,21 +591,14 @@
                             <h2 class="text-xl font-bold">Mayank Infra Developers</h2>
                         </div>
                         <div class="flex space-x-4 mb-6">
-                            <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                            <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-                                <i class="fab fa-whatsapp"></i>
-                            </a>
+                            <p>Follow us on :
+                                <span class="flex"> 
+                                    <img style="padding: 0.10rem;" onclick="window.open('http://www.google.com', '_blank');" src="./assets/Icons/facebook.png" width="5%">
+                                    <img style="padding: 0.10rem;" onclick="window.open('http://www.google.com', '_blank');" src="./assets/Icons/instagram.png" width="5%">
+                                    <img style="padding: 0.10rem;" onclick="window.open('http://www.google.com', '_blank');" src="./assets/Icons/twitter.png" width="5%">
+                                    <img style="padding: 0.10rem;" onclick="window.open('http://www.google.com', '_blank');" src="./assets/Icons/whatsapp.png" width="5%">
+                                    <img style="padding: 0.10rem;" onclick="window.open('http://www.google.com', '_blank');" src="./assets/Icons/youtube.png" width="5%">
+                                </span>
                         </div>
                         <div class="relative mt-6">
                             <form class="flex">
@@ -245,9 +631,9 @@
                         <p class="text-gray-400 mb-2">D3T Tech Hub, Plot No 5 & 6, 4th Floor</p>
                         <p class="text-gray-400 mb-2">Silicon Valley, Madhapur</p>
                         <p class="text-gray-400 mb-2">Hyderabad, Telangana, 500081</p>
-                        <a href="mailto:info@mayaninfra.com"
+                        <a href="mailto:info@mayankinfra.com"
                             class="text-gray-400 hover:text-white transition duration-300">
-                            info@mayaninfra.com
+                            info@mayankinfra.com
                         </a>
                         <!-- <p class="text-gray-400 mt-2">+1(888)-123-4587</p> -->
                     </div>
