@@ -54,6 +54,7 @@
             flex: 1;
             text-align: center;
         }
+    
 
         .left-content h2 {
             font-size: 2.5rem;
@@ -360,20 +361,30 @@
             top:3.8Rem !important;
             width: auto;
         }
-        .show {
+            .show {
             display: none;
             }
 
             .hide {
             display: block;
             }
+           
             @media screen and (min-width: 768px) {
             .show {
                 display: block; /* Show the .show class */
             }
-
             .hide {
                 display: none; /* Hide the .hide class */
+            }
+
+            .left-content {
+                display: flex !important;
+            }
+            .right-content {
+                display: block !important;
+            }
+            .card {
+                width: 100%;
             }
         }
     </style>
