@@ -34,6 +34,13 @@
             /* Light cool blue */
             --pastel-bg-3: rgba(6, 0, 73, 0.08);
             /* Soft subtle accent */
+
+
+            /* Adjusted shape colors for increased visibility */
+            --shape-color-1: rgba(165, 125, 66, 0.25);
+            /* Light goldish, more opaque */
+            --shape-color-2: rgba(1, 30, 74, 0.2);
+            /* Light bluish, more opaque */
         }
 
         * {
@@ -425,7 +432,7 @@
             background-color: #ffffff;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            margin-top: 50px;
+            font-family: 'Maven Pro', sans-serif;
         }
 
         .company-culture .header {
@@ -434,73 +441,148 @@
         }
 
         .company-culture .header h1 {
-            font-size: 2rem;
+            font-size: 1.8rem;
             color: #2b3a5b;
             margin-bottom: 15px;
         }
 
         .company-culture .header p {
-            font-size: 1rem;
-            color: #666;
-            line-height: 1.7;
-        }
-
-        .company-culture .content {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .company-culture .card {
-            background-color: #e3eaf0;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-            flex: 1;
-            transition: transform var(--transition), box-shadow var(--transition);
-            min-width: 250px;
-        }
-
-        .company-culture .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .company-culture .card h2 {
-            font-size: 1.5rem;
-            color: #2b3a5b;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            font-weight: bolder;
-        }
-
-        .company-culture .card p,
-        .company-culture .card li {
-            font-size: 1rem;
+            font-size: 0.95rem;
+            line-height: 1.6;
             color: #555;
-            margin-bottom: 10px;
-            line-height: 1.7;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
-        .company-culture .card ul {
+        .mission-vision-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .mission-vision-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .mv-image-container,
+        .mv-text-container {
+            flex: 1 1 50%;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .mv-image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mv-image-container img {
+            width: 60px;
+            height: auto;
+            opacity: 0.9;
+            transition: transform var(--transition);
+        }
+
+        .mv-image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        .mv-text-container h2 {
+            font-size: 1.4rem;
+            color: #2b3a5b;
+            margin-bottom: 15px;
+        }
+
+        .mv-text-container ul {
             list-style: inside disc;
-            text-align: left;
-            margin: 10px 0;
+            padding-left: 0;
         }
 
-        .company-culture .mission {
-            background-color: #e3f2fd;
-            border-left: 5px solid #2196f3;
+        .mv-text-container li {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: #444;
+            margin-bottom: 10px;
         }
 
-        .company-culture .vision {
-            background-color: #e8f5e9;
-            border-left: 5px solid #4caf50;
+        .mv-text-container li strong {
+            color: #2b3a5b;
+            font-weight: 600;
         }
+
+        /* More visible geometry shapes */
+        .mission-text-container::after,
+        .vision-text-container::after {
+            content: "";
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            width: 180px;
+            height: 60px;
+            pointer-events: none;
+            /* Increased size and opacity for visibility */
+            background:
+                radial-gradient(circle at 20% 50%, var(--shape-color-1) 0%, transparent 60%),
+                conic-gradient(from 45deg at 80% 50%, var(--shape-color-2) 35deg, transparent 35deg 360deg);
+            background-repeat: no-repeat;
+            background-position: 0 0, 80px 0;
+            background-size: 60px 60px, 70px 70px;
+            opacity: 1;
+            /* Full visibility */
+        }
+
+        @media (max-width: 768px) {
+
+            .mv-image-container,
+            .mv-text-container {
+                flex: 1 1 100%;
+                text-align: center;
+            }
+
+            .mv-text-container ul li {
+                font-size: 0.85rem;
+            }
+
+            .company-culture .header p {
+                font-size: 0.9rem;
+            }
+
+            .mission-text-container::after,
+            .vision-text-container::after {
+                left: 50%;
+                transform: translateX(-50%);
+                width: 150px;
+                height: 50px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .mv-text-container h2 {
+                font-size: 1.2rem;
+            }
+
+            .mv-text-container li {
+                font-size: 0.85rem;
+            }
+
+            .company-culture .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .mission-text-container::after,
+            .vision-text-container::after {
+                width: 120px;
+                height: 40px;
+            }
+        }
+
 
         /* Chairman Section */
         .chairman-container {
@@ -510,11 +592,6 @@
             align-items: center;
             padding: 50px 20px;
             overflow: hidden;
-            background:
-                radial-gradient(at 20% 30%, var(--pastel-bg-1) 0%, transparent 70%),
-                radial-gradient(at 80% 70%, var(--pastel-bg-2) 0%, transparent 60%),
-                radial-gradient(at 50% 50%, var(--pastel-bg-3) 0%, transparent 80%),
-                #f9f9f9;
             /* fallback solid color */
         }
 
@@ -933,7 +1010,8 @@
         <!-- Top Header -->
         <div class="header">
             <h1>Our Commitment to Quality:</h1>
-            <p>At Mayank Infra Developers, we specialize in offering premium residential and venture plots designed to
+            <p>
+                At Mayank Infra Developers, we specialize in offering premium residential and venture plots designed to
                 meet the diverse needs of modern homeowners and investors. Our plots are meticulously planned to provide
                 comfort, luxury, and a prestigious living experience in prime locations, while also serving as perfect
                 opportunities for future investments. By balancing affordability with uncompromising quality, we ensure
@@ -944,17 +1022,17 @@
             </p>
         </div>
 
-        <!-- Mission and Vision -->
-        <div class="content">
-            <!-- Mission -->
-            <div class="card mission">
-                <h2>
-                    <img src="./assets/Icons/target.png" alt="Mission Icon" width="40">
-                    Our Mission
-                </h2>
+        <!-- Mission Section (Image Left, Text Right) -->
+        <div class="mission-vision-row mission-row">
+            <div class="mv-image-container">
+                <img src="./assets/Icons/target.png" alt="Mission Icon">
+            </div>
+            <div class="mv-text-container mission-text-container">
+                <h2>Our Mission</h2>
                 <ul>
                     <li><strong>Delivering Excellence:</strong> We focus on delivering high-quality projects that are
-                        not only aesthetically pleasing but also practical and valuable for long-term growth.</li>
+                        not only
+                        aesthetically pleasing but also practical and valuable for long-term growth.</li>
                     <li><strong>Customer-Centric Approach:</strong> Our goal is to ensure complete satisfaction for each
                         client. We believe in fostering long-term relationships with our clients and making them part of
                         the Mayank Infra family.</li>
@@ -963,19 +1041,17 @@
                         confidence in every transaction.</li>
                 </ul>
             </div>
+        </div>
 
-            <!-- Vision -->
-            <div class="card vision">
-                <h2>
-                    <img src="./assets/Icons/opportunity.png" alt="Vision Icon" width="40">
-                    Our Vision
-                </h2>
+        <!-- Vision Section (Text Left, Image Right) -->
+        <div class="mission-vision-row vision-row">
+            <div class="mv-text-container vision-text-container">
+                <h2>Our Vision</h2>
                 <ul>
                     <li>
                         <strong>Reach the Pinnacle of Real Estate:</strong> Our goal is to be recognized as one of the
                         top real estate developers in the region by providing outstanding properties that cater to the
-                        needs of our
-                        customers.
+                        needs of our customers.
                     </li>
                     <li>
                         <strong>Contribute to Society:</strong>
@@ -985,10 +1061,13 @@
                     </li>
                 </ul>
             </div>
+            <div class="mv-image-container">
+                <img src="./assets/Icons/opportunity.png" alt="Vision Icon">
+            </div>
         </div>
     </section>
 
-    <!-- Chairman Section -->
+    <!--Chairman Section-->
     <section class="chairman-container">
         <div class="chairman-card">
             <div class="chairman-image-container">
