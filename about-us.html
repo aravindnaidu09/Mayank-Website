@@ -62,6 +62,23 @@
         }
 
         /* Navbar Styles (Separate) */
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            /* Vertically centers items within the container */
+            gap: 10px;
+            /* Add space between the image and text */
+        }
+
+        .company-name {
+            font-size: 1rem;
+            /* Adjust as needed */
+            color: var(--primary-color);
+            /* Ensure this variable is defined */
+            margin: 0;
+            /* Remove default p tag margin */
+        }
+
         .navbar {
             background: #fff;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -918,7 +935,10 @@
     <nav class="navbar">
         <div class="navbar-container">
             <!-- Navbar content -->
-            <img src="/assets/images/MayankLogo.png" alt="Mayank Infra Developers" class="nav-logo">
+            <div class="navbar-brand">
+                <img src="assets/images/MayankLogo.png" alt="Mayank Infra Developers" class="nav-logo">
+                <p class="company-name">Mayank Infra Developers</p>
+            </div>
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="projects.html">Projects</a>
