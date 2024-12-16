@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
     <style>
         :root {
-            --main-font: 'Maven Pro', sans-serif;
+            --main-font: 'Maven Pro';
             --primary-color: #011E4A;
             --secondary-color: #A57D42;
             --accent-color: #060049;
@@ -107,6 +107,7 @@
             text-decoration: none;
             font-weight: 500;
             position: relative;
+            transition: color 0.3s ease;
         }
 
         .nav-links a:hover {
@@ -126,6 +127,15 @@
             height: 2px;
             background: var(--secondary-color);
             transition: width 0.3s ease;
+        }
+
+        .nav-links a.active {
+            color: var(--secondary-color);
+            font-weight: 700;
+        }
+
+        .nav-links a.active::after {
+            width: 100%;
         }
 
         /* Hero Section */
