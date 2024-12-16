@@ -82,7 +82,7 @@
         .navbar {
             background: #fff;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            padding: 1rem 2rem;
+            padding: 5px 2rem;
             position: fixed;
             /* Make the navbar fixed */
             top: 0;
@@ -114,7 +114,7 @@
         }
 
         .nav-logo {
-            width: 3rem;
+            width: 5rem;
             height: auto;
         }
 
@@ -1185,45 +1185,6 @@
     <script>
         // Scroll Reveal
         ScrollReveal().reveal('.fade-in', { delay: 300, distance: '50px', duration: 1000, easing: 'cubic-bezier(0.5, 0, 0, 1)' });
-
-        // Navbar scroll effect
-        window.addEventListener("scroll", function () {
-            const navbar = document.getElementById("navbar");
-            if (window.scrollY > 50) {
-                navbar.classList.add("scrolled");
-            } else {
-                navbar.classList.remove("scrolled");
-            }
-        });
-
-        // Auto hide/show mobile nav on scroll
-        const navBar = document.getElementById('navbar');
-        let isVisible = true;
-        let fadeTimeout;
-
-        const showNavBar = () => {
-            if (!isVisible) {
-                navBar.classList.remove('fade-out');
-                navBar.classList.add('fade-in');
-                isVisible = true;
-            }
-            clearTimeout(fadeTimeout);
-            fadeTimeout = setTimeout(() => {
-                hideNavBar();
-            }, 3000);
-        };
-
-        const hideNavBar = () => {
-            if (isVisible) {
-                navBar.classList.remove('fade-in');
-                navBar.classList.add('fade-out');
-                isVisible = false;
-            }
-        };
-
-        window.addEventListener('scroll', () => {
-            showNavBar();
-        });
     </script>
 </body>
 
