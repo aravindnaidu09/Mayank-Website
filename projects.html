@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mayank Infra Developers</title>
-    <link rel="icon" type="image/x-icon" href="./assets/images/MayankLogo.png">
+    <link rel="icon" type="image/x-icon" href="assets/images/MayankLogo.png">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap" rel="stylesheet">
@@ -63,17 +63,20 @@
                 transform: translateY(0);
             }
         }
+
         .fade-in {
-      transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-      transform: translateY(0);
-      opacity: 1;
-    }
-    /* Smooth fade-out animation */
-    .fade-out {
-      transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-      transform: translateY(-100%);
-      opacity: 0;
-    }
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        /* Smooth fade-out animation */
+        .fade-out {
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+
         .animate-bounce-on-hover:hover {
             animation: bubble 0.3s ease-in-out;
         }
@@ -117,20 +120,24 @@
             transform: rotateY(180deg);
             z-index: 1;
         }
+
         .show {
             display: none;
-            }
+        }
 
-            .hide {
+        .hide {
             display: block;
-            }
-            @media screen and (min-width: 768px) {
+        }
+
+        @media screen and (min-width: 768px) {
             .show {
-                display: block; /* Show the .show class */
+                display: block;
+                /* Show the .show class */
             }
 
             .hide {
-                display: none; /* Hide the .hide class */
+                display: none;
+                /* Hide the .hide class */
             }
         }
     </style>
@@ -142,12 +149,12 @@
         class="bg-transparent text-[#011E4A]  shadow-md font-maven fixed top-0 left-0 w-full z-50 transition duration-300 ease-in-out">
         <div class="container mx-auto px-4 flex justify-between items-center">
             <!-- Logo Section -->
-        <div class="text-lg font-bold">
-            <img src="./assets/Images/MayankLogo.png" style="width: 5rem;" alt="Logo" class="mx-auto">
-           </div>
-           <p class="flex-auto px-3.5">Mayank Infra Developers</p>
+            <div class="text-lg font-bold">
+                <img src="assets/images/MayankLogo.png" style="width: 5rem;" alt="Logo" class="mx-auto">
+            </div>
+            <p class="flex-auto px-3.5">Mayank Infra Developers</p>
             <!-- Navigation Links -->
-             <div id="nav-links" class="space-x-6 show lg:block">
+            <div id="nav-links" class="space-x-6 show lg:block">
                 <a href="index.html"
                     class="relative inline-block text-[#011E4A] transition duration-300 hover:text-gold hover:-translate-y-1">
                     Home
@@ -173,42 +180,43 @@
                         class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
                 </a>
             </div>
-            
+
         </div>
     </nav>
-    <div id="navBar" class="bg-white shadow-md font-maven border-b sticky top-16 rounded-full z-50 transition duration-300 ease-in-out md:hidden">
+    <div id="navBar"
+        class="bg-white shadow-md font-maven border-b sticky top-16 rounded-full z-50 transition duration-300 ease-in-out md:hidden">
         <div class="flex justify-between items-center overflow-x-auto whitespace-nowrap px-4 py-2">
             <a href="index.html"
-            class="relative inline-block text-[#011E4A] transition duration-300 hover:text-gold hover:-translate-y-1">
-            Home
-            <span
-                class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
-        </a>
-        <a href="projects.html"
-            class="relative inline-block text-[#011E4A] transition duration-300 hover:text-gold hover:-translate-y-1">
-            Projects
-            <span
-                class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
-        </a>
-        <a href="about-us.html"
-            class="relative inline-block text-[#011E4A] transition duration-300 hover:text-gold hover:-translate-y-1">
-            About Us
-            <span
-                class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
-        </a>
-        <a href="#contact"
-            class="relative inline-block text-[#011E4A] transition duration-300 hover:text-gold hover:-translate-y-1">
-            Contact Us
-            <span
-                class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
-        </a>  
+                class="relative inline-block text-[#011E4A] transition duration-300 hover:text-gold hover:-translate-y-1">
+                Home
+                <span
+                    class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
+            </a>
+            <a href="projects.html"
+                class="relative inline-block text-[#011E4A] transition duration-300 hover:text-gold hover:-translate-y-1">
+                Projects
+                <span
+                    class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
+            </a>
+            <a href="about-us.html"
+                class="relative inline-block text-[#011E4A] transition duration-300 hover:text-gold hover:-translate-y-1">
+                About Us
+                <span
+                    class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
+            </a>
+            <a href="#contact"
+                class="relative inline-block text-[#011E4A] transition duration-300 hover:text-gold hover:-translate-y-1">
+                Contact Us
+                <span
+                    class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
+            </a>
         </div>
-      </div>
+    </div>
     <!--hero section-->
     <section id="hero" class="py-20 bg-transparent text-[#011E4A] relative font-maven">
         <!-- Hero Section -->
         <div class="absolute inset-0 bg-cover bg-center opacity-10"
-            style="background-image: url('/assets/images/bg-house.webp');"></div>
+            style="background-image: url('assets/images/bg-house.webp');"></div>
         <div class="container mx-auto px-4 relative z-10 flex items-center justify-between">
             <div class="max-w-md fade-in">
                 <h1 class="text-4xl font-bold mb-4">Building Dreams, Creating Legacies</h1>
@@ -216,13 +224,13 @@
                 <!-- <a href="#projects" class="bg-gold text-[#011E4A] px-6 py-3 rounded-full hover-scale">Explore Our
                     Projects</a> -->
             </div>
-            <img src="./assets/images/Hero.jpg" alt="Mayank Infra Developers" />
+            <img src="assets/images/Hero.jpg" alt="Mayank Infra Developers" />
         </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="py-16 mt-4 mb-4 relative bg-cover bg-center"
-        style="background-image: url('/assets/images/plots.jpg');">
+        style="background-image: url('assets/images/plots.jpg');">
         <div class="absolute inset-0 bg-white bg-opacity-80"></div> <!-- Light overlay for better content visibility -->
 
         <div class="container mx-auto px-4 relative z-10">
@@ -236,7 +244,7 @@
                     <div
                         class="relative w-64 h-64 rounded-lg shadow-lg transform-style preserve-3d hover:rotate-y-180 transition-transform duration-700 border-2">
                         <!-- Logo at the Top with Rounded Style -->
-                        <img src="./assets/images/omkara-logo.jpg" alt="Omkara Logo"
+                        <img src="assets/images/omkara-logo.jpg" alt="Omkara Logo"
                             class="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full bg-white border border-gray-200 shadow-md z-20">
 
                         <!-- Decorative Curve -->
@@ -267,7 +275,7 @@
                     <div
                         class="relative w-64 h-64 rounded-lg shadow-lg transform-style preserve-3d hover:rotate-y-180 transition-transform duration-700 border-2">
                         <!-- Logo at the Top with Rounded Style -->
-                        <img src="./assets/images/upcoming.jpg" alt="Upcoming Project Logo"
+                        <img src="assets/images/upcoming.jpg" alt="Upcoming Project Logo"
                             class="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full bg-white border border-gray-200 shadow-md z-20">
 
                         <!-- Decorative Curve -->
@@ -312,7 +320,7 @@
                         for excellence, we transform landscapes into opportunities.
                     </p>
                 </div>
-                <img src="./assets/images/about-us.jpg" alt="About Image"
+                <img src="assets/images/about-us.jpg" alt="About Image"
                     class="w-[300px] h-[250px] fade-in delay-500 rounded-lg shadow-md mt-6 md:mt-0">
             </div>
         </div>
@@ -329,18 +337,28 @@
                     <div>
                         <div class="flex items-center mb-6">
                             <div class="bg-white rounded-full w-16 h-16 flex items-center justify-center mr-4">
-                                <img src="./assets/images/MayankLogo.png" alt="Mayank Logo" class="w-10 h-10" />
+                                <img src="assets/images/MayankLogo.png" alt="Mayank Logo" class="w-10 h-10" />
                             </div>
                             <h2 class="text-xl font-bold">Mayank Infra Developers</h2>
                         </div>
                         <div class="flex space-x-4 mb-6">
                             <p>Follow us on :
-                                <span class="flex"> 
-                                    <img style="padding: 0.10rem;margin-right: 5px;" onclick="window.open('http://www.google.com', '_blank');" src="./assets/Icons/facebook.png" width="5%">
-                                    <img style="padding: 0.10rem;margin: 0 5px;" onclick="window.open('http://www.google.com', '_blank');" src="./assets/Icons/instagram.png" width="5%">
-                                    <img style="padding: 0.10rem;margin: 0 5px;" onclick="window.open('http://www.google.com', '_blank');" src="./assets/Icons/twitter.png" width="5%">
-                                    <img style="padding: 0.10rem;margin: 0 5px;" onclick="window.open('http://www.google.com', '_blank');" src="./assets/Icons/whatsapp.png" width="5%">
-                                    <img style="padding: 0.10rem;margin: 0 5px;" onclick="window.open('http://www.google.com', '_blank');" src="./assets/Icons/youtube.png" width="5%">
+                                <span class="flex">
+                                    <img style="padding: 0.10rem;margin-right: 5px;"
+                                        onclick="window.open('http://www.google.com', '_blank');"
+                                        src="assets/icons/facebook.png" width="5%">
+                                    <img style="padding: 0.10rem;margin: 0 5px;"
+                                        onclick="window.open('http://www.google.com', '_blank');"
+                                        src="assets/icons/instagram.png" width="5%">
+                                    <img style="padding: 0.10rem;margin: 0 5px;"
+                                        onclick="window.open('http://www.google.com', '_blank');"
+                                        src="assets/icons/twitter.png" width="5%">
+                                    <img style="padding: 0.10rem;margin: 0 5px;"
+                                        onclick="window.open('http://www.google.com', '_blank');"
+                                        src="assets/icons/whatsapp.png" width="5%">
+                                    <img style="padding: 0.10rem;margin: 0 5px;"
+                                        onclick="window.open('http://www.google.com', '_blank');"
+                                        src="assets/icons/youtube.png" width="5%">
                                 </span>
                         </div>
                         <div class="relative mt-6">
@@ -410,36 +428,36 @@
         const navBar = document.getElementById('navBar');
         let isVisible = true; // Track if the navbar is currently visible
         let fadeTimeout;
-    
+
         // Function to show the nav bar
         const showNavBar = () => {
-          if (!isVisible) {
-            navBar.classList.remove('fade-out');
-            navBar.classList.add('fade-in');
-            isVisible = true;
-          }
-    
-          // Reset the fade timeout
-          clearTimeout(fadeTimeout);
-          fadeTimeout = setTimeout(() => {
-            hideNavBar();
-          }, 3000); // Nav bar stays visible for 3 seconds
+            if (!isVisible) {
+                navBar.classList.remove('fade-out');
+                navBar.classList.add('fade-in');
+                isVisible = true;
+            }
+
+            // Reset the fade timeout
+            clearTimeout(fadeTimeout);
+            fadeTimeout = setTimeout(() => {
+                hideNavBar();
+            }, 3000); // Nav bar stays visible for 3 seconds
         };
-    
+
         // Function to hide the nav bar
         const hideNavBar = () => {
-          if (isVisible) {
-            navBar.classList.remove('fade-in');
-            navBar.classList.add('fade-out');
-            isVisible = false;
-          }
+            if (isVisible) {
+                navBar.classList.remove('fade-in');
+                navBar.classList.add('fade-out');
+                isVisible = false;
+            }
         };
-    
+
         // Add a scroll event listener
         window.addEventListener('scroll', () => {
-          showNavBar();
+            showNavBar();
         });
-      </script>
+    </script>
 </body>
 
 </html>
