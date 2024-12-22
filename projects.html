@@ -26,7 +26,16 @@
             font-family: 'Maven Pro', sans-serif;
             font-weight: 700;
         }
-
+        .Width100{
+            width: 100% !important;
+        }
+        .h-120{
+         height: 50vh;   
+        }
+        .FaXSmaller{
+            font-size: x-small !important;
+            color: #060049;
+        }
         .hover-scale {
             transition: transform 0.3s ease-in-out;
         }
@@ -241,7 +250,7 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Ongoing Project Card -->
                 <div class="group perspective justify-items-center">
-                    <div class="relative w-64 h-64 rounded-lg shadow-lg transform-style preserve-3d hover:rotate-y-180 transition-transform duration-700 border-2">
+                    <div class="relative Width100 h-120 rounded-lg shadow-lg transform-style preserve-3d hover:rotate-y-180 transition-transform duration-700 border-2">
                         <!-- Logo at the Top with Rounded Style -->
                         <img src="assets/images/OmKaraLogo_1.png" alt="Omkara Logo"
                             class="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full bg-white border border-gray-200 shadow-md z-20 object-contain">
@@ -251,29 +260,31 @@
 
                         <!-- Front Side -->
                         <div
-                            class="absolute inset-0 justify-items-center rounded-lg shadow-md backface-hidden pt-12 bg-cover"
+                            class="absolute  inset-0 justify-items-center rounded-lg shadow-md backface-hidden pt-12 bg-cover"
                             style="background-image: url('./assets/images/Hero.png');">
                             <h4 class="text-lg font-semibold text-white">Omkara</h4>
-                            <p class="text-gray-600 text-center mt-2 text-sm text-white">Luxurious Villa Plots</p>
+                            <p class="text-gray-600 text-center mt-2 text-sm text-white">Premium Luxurious Villa Plots, Zaheerabad
+                            </p>
                         </div>
 
                         <!-- Back Side -->
                         <div
-                            class="absolute inset-0 bg-gray-100 flex flex-col justify-center items-center rounded-lg shadow-md rotate-y-180 backface-hidden pt-12">
-                            <h4 class="font-semibold text-[#011E4A] mb-4">Omkara - Luxurious Villa Plots</h4>
-                            <p class="text-gray-600 px-4 text-center text-sm">
-                                Omkara offers meticulously planned villa plots with lush landscapes, modern
-                                amenities, and unparalleled tranquility at Zaheerabad.
+                            class="absolute inset-0 p-4 bg-gray-100 flex flex-col justify-center items-center rounded-lg shadow-md rotate-y-180 backface-hidden pt-12">
+                            <h4 class="font-semibold text-[#011E4A] mb-4 FaXSmaller">We are excited to announce our ongoing Omkara project in Zaheerabad. This project is DTCP  & RERA approved, ensuring that it meets all legal and regulatory requirements for safety and development.</h4>
+                            <ul class="FaXSmaller">
+                                <li><b>Strategic Location:</b> Omkara is situated in one of the most promising areas of Zaheerabad Municipality, offering easy access to <b>NIMZ</b>, transportation, commercial hubs, and essential amenities.</li>
+                                <li><b>Approved and Reliable:</b> Being a DTCP-approved project, it adheres to the highest standards of quality, legal compliance, and safety, offering peace of mind to our investors.</li>
+                                <li><b>Modern Infrastructure:</b> The project is equipped with modern infrastructure, ensuring a sustainable and high-quality living experience for its residents.</li>
+                            </ul>
+                            <p class="FaXSmaller">Stay tuned for more details about the <b>Omkara</b> project as it progresses toward completion.
                             </p>
                         </div>
                     </div>
                 </div>
-
-
                 <!-- Upcoming Project Card -->
                 <div class="group perspective justify-items-center">
                     <div
-                        class="relative w-64 h-64 rounded-lg shadow-lg transform-style preserve-3d hover:rotate-y-180 transition-transform duration-700 border-2">
+                        class="relative Width100 h-120 rounded-lg shadow-lg transform-style preserve-3d hover:rotate-y-180 transition-transform duration-700 border-2">
                         <!-- Logo at the Top with Rounded Style -->
                         <img src="assets/icons/construction_15901364.png" alt="Upcoming Project Logo"
                             class="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full bg-white border border-gray-200 shadow-md z-20">
@@ -286,22 +297,24 @@
                         class="absolute inset-0 justify-items-center rounded-lg shadow-md backface-hidden pt-12 bg-cover"
                         style="background-image: url('./assets/images/plots.jpg');">
                             <h4 class="text-lg font-semibold text-[#011E4A]">Upcoming Project</h4>
-                            <p class="text-gray-600 text-center mt-2 text-sm">Stay tuned for updates!</p>
+                            <p class="text-gray-600 text-center mt-2 text-sm">Open Plot Ventures at Shadnagar & Athmakur, Sadashivpet</p>
                         </div>
 
                         <!-- Back Side -->
-                        <div
-                            class="absolute inset-0 bg-gray-100 flex flex-col justify-center items-center rounded-lg shadow-md rotate-y-180 backface-hidden pt-12">
-                            <h4 class="font-semibold text-[#011E4A] mb-4">Upcoming Projects</h4>
-                            <p class="text-gray-600 px-4 text-center text-sm">
-                                Exciting opportunities are on the horizon! Stay tuned for luxurious living spaces and
-                                investment options in prime locations.
-                            </p>
-                        </div>
+                        <div class="absolute inset-0 bg-gray-100 p-4 flex flex-col justify-center items-center rounded-lg shadow-md rotate-y-180 backface-hidden pt-12">
+                        <h4 class="text-lg font-semibold text-[#011E4A]">Upcoming Project</h4>
+                        <h4 class="font-semibold text-[#011E4A] mb-4 FaXSmaller">We are thrilled to announce our upcoming projects in Bangalore HIghway at Shadnagar, Mumbai Highway at Athmakur and Sadashivpet, featuring Premium Villa plots Projects. These upcoming developments promise to provide premium, affordable plots in highly sought-after areas</h4>
+                        <ul class="FaXSmaller">
+                            <li><b>Prime Locations:</b> These areas are rapidly developing, making them ideal for both residential and investment purposes.</li>
+                            <li><b>Affordable Plots:</b> stment purposes.
+                                Affordable Plots: Our upcoming ventures will offer high-quality plots at competitive prices, allowing our customers to invest in emerging areas with long-term growth potential.
+                            </li>
+                        </ul>
+                        <p class="FaXSmaller">Stay tuned for more details about the <b>Upcoming</b> project as it progresses toward completion.
+                        </p>
+                    </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </section>
