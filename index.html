@@ -228,17 +228,13 @@
                 Discover the thoughtfully designed layout for a harmonious
                 living experience.
             </p>
-            <div class="mt-8 relative fade-in delay-200">
-                <div class="overflow-hidden rounded-lg shadow-lg">
-                    <!-- Add subtle zoom-in animation -->
-                    <img src="assets/images/layout-plan.jpg" alt="Layout Plan"
-                        class="w-full h-auto transition-transform duration-700 hover:scale-105">
-                </div>
-                <!-- Add overlay effect -->
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-blue-900 via-transparent to-transparent opacity-0 hover:opacity-40 transition-opacity duration-500 rounded-lg">
-                </div>
-            </div>
+            <div class="text-center p-6 rounded-lg">
+                <a
+                onclick="downloadPDF()"
+                class="flex justify-center items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                <img src="./assets/icons/pdf_4726010.png" alt="PDF Icon" class="w-6 h-6 mr-2"  />
+                <span>Download PDF</span>
+              </a>
         </div>
     </section>
 
@@ -371,6 +367,13 @@
         window.addEventListener('scroll', () => {
             showNavBar();
         });
+
+        function downloadPDF(){
+            const link = document.createElement('a');
+                link.href = './assets/pdf/Omkara_Project.pdf';
+                link.download = 'Omkara_Project_Details.pdf';
+                link.click();
+        }
     </script>
 </body>
 
