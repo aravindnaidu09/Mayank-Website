@@ -343,7 +343,7 @@
         }
 
         .why-choose-us .content-container {
-            display: grid;
+            display: block;
             max-width: 1200px;
             width: 100%;
             gap: 50px;
@@ -355,9 +355,9 @@
         }
 
         .why-choose-us .left-content h2 {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: #333;
+            font-size: 1.5rem;
+            font-weight: bolder;
+            color: #060049;
         }
 
         .why-choose-us .left-content h2 .highlight {
@@ -427,9 +427,9 @@
         }
 
         .why-choose-us .card h3 {
-            font-size: 1.5rem;
+            font-size: 1rem;
             font-weight: bold;
-            color: #333;
+            color: #060049;
             margin-bottom: 15px;
         }
 
@@ -472,9 +472,10 @@
         }
 
         .company-culture .header h1 {
-            font-size: 1.8rem;
-            color: #2b3a5b;
+            font-size: 1.5rem;
+            color: #060049;
             margin-bottom: 15px;
+            font-weight: bolder;
         }
 
         .company-culture .header p {
@@ -527,8 +528,9 @@
         }
 
         .mv-text-container h2 {
-            font-size: 1.4rem;
-            color: #2b3a5b;
+            font-size: 1.5rem;
+            color: #060049;
+            font-weight: bolder;
             margin-bottom: 15px;
         }
 
@@ -559,15 +561,7 @@
             width: 180px;
             height: 60px;
             pointer-events: none;
-            background:
-                radial-gradient(circle at 20% 50%, var(--shape-color-1) 0%, transparent 60%),
-                conic-gradient(from 45deg at 80% 50%, var(--shape-color-2) 35deg, transparent 35deg 360deg);
-            background-repeat: no-repeat;
-            background-position: 0 0, 80px 0;
-            background-size: 60px 60px, 70px 70px;
-            opacity: 1;
-            z-index: -1;
-        }
+            }
 
         @media (max-width: 768px) {
 
@@ -1051,9 +1045,7 @@
                     <h1>Welcome to <span>Mayank Infra Developers</span></h1>
                     <div class="accent-line"></div>
                     <p>
-                        Upholding <strong>strong moralistic standards</strong>, transparent dealings,
-                        and a commitment to excellence. We deliver high-class quality projects that
-                        blend luxury, affordability, and enduring value.
+                        where we believe that true success comes from upholding <strong>strong moralistic standards</strong>, transparent dealings, and a commitment to excellence. We are dedicated to delivering high-class quality projects that offer both luxury and affordability, focusing on properties that stand the test of time
                     </p>
                 </div>
             </div>
@@ -1075,7 +1067,7 @@
             </div>
 
             <!-- Right Content: Cards -->
-            <div class="right-content">
+            <div class="right-content mt-6">
                 <!-- Curved Dotted Line -->
                 <svg class="curved-line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" fill="none">
                     <path d="M50 200 Q300 50 600 200 T1150 100" stroke="#A57D42" stroke-width="2"
@@ -1089,8 +1081,7 @@
                     </div>
                     <h3>Transparency and Integrity</h3>
                     <p>
-                        We are fully transparent with our clients, ensuring that you are always informed and confident
-                        in your investment. We believe that honesty is the best policy.
+                        We are fully transparent with our clients, ensuring that you are always informed and confident in your investment. We believe that honesty is the best policy.
                     </p>
                 </div>
 
@@ -1101,8 +1092,7 @@
                     </div>
                     <h3>Customer Satisfaction</h3>
                     <p>
-                        Our clients’ satisfaction is at the core of everything we do. We prioritize your needs and are
-                        committed to delivering projects that exceed your expectations.
+                        Our clients’ satisfaction is at the core of everything we do. We prioritize your needs and are committed to delivering projects that exceed your expectations.
                     </p>
                 </div>
 
@@ -1113,8 +1103,7 @@
                     </div>
                     <h3>Expertise and Experience</h3>
                     <p>
-                        With years of experience in real estate development, our team brings expertise and
-                        professionalism to every project, ensuring the highest standards of quality.
+                        With years of experience in real estate development, our team brings expertise and professionalism to every project, ensuring the highest standards of quality.
                     </p>
                 </div>
             </div>
@@ -1127,17 +1116,32 @@
         <div class="header">
             <h1>Our Commitment to Quality:</h1>
             <p>
-                At Mayank Infra Developers, we specialize in offering premium residential and venture plots designed to
-                meet the diverse needs of modern homeowners and investors. Our plots are meticulously planned to provide
-                comfort, luxury, and a prestigious living experience in prime locations, while also serving as perfect
-                opportunities for future investments. By balancing affordability with uncompromising quality, we ensure
-                our properties deliver long-term value, making them ideal for both personal and business growth.
-                Green and Clean Environment: We understand the importance of a clean and sustainable environment. Our
-                projects are meticulously planned with greenery, clean surroundings, and eco-friendly practices,
-                ensuring a serene and healthy living environment for you and your family.
+                At Mayank Infra Developers, we take pride in offering:
             </p>
+            <div class="flex flex-wrap justify-center gap-6"> <!-- Card 1: Premium Villa Plots -->
+                <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden"> <img
+                        src="./assets/images/PremiumLuxuriousVillaPlots.jpg" alt="Luxurious Villa"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Premium Luxurious Villa Plots</h3>
+                        <p class="text-gray-600 text-sm"> Experience unparalleled luxury and comfort with our premium villa plots.
+                            Designed for modern homeowners, these plots offer a perfect blend of elegance and functionality in prime
+                            locations. Whether for investment or living, our plots promise quality, convenience, and a prestigious
+                            lifestyle. </p>
+                    </div>
+                </div> <!-- Card 2: Green and Clean Environment -->
+                <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden"> 
+                    <img src="./assets/images/Green&CleanEnvironment.jpg" alt="Green Environment"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Green and Clean Environment</h3>
+                        <p class="text-gray-600 text-sm"> At Mayank Infra Developers, we prioritize eco-friendly living. Our
+                            ventures are thoughtfully planned with lush greenery, clean surroundings, and sustainable practices,
+                            ensuring a serene and healthy environment for you and your family. </p>
+                    </div>
+                </div>
+            </div>
         </div>
-
         <!-- Mission Section (Image Left, Text Right) -->
         <div class="mission-vision-row mission-row">
             <div class="mv-image-container">
@@ -1145,6 +1149,8 @@
             </div>
             <div class="mv-text-container mission-text-container">
                 <h2>Our Mission</h2>
+                <p>At Mayank Infra Developers, our mission is clear and unwavering. We strive to create properties that perfectly match our client's needs, offering them tailored solutions to meet their expectations. We are committed to:
+                </p>
                 <ul>
                     <li><strong>Delivering Excellence:</strong> We focus on delivering high-quality projects that are
                         not only
@@ -1163,6 +1169,7 @@
         <div class="mission-vision-row vision-row">
             <div class="mv-text-container vision-text-container">
                 <h2>Our Vision</h2>
+                <p>Our vision is to become one of the leading names in the real estate industry by continuously delivering the finest properties and redefining the standards of quality and trust in the market. We aim to:</p>
                 <ul>
                     <li>
                         <strong>Reach the Pinnacle of Real Estate:</strong> Our goal is to be recognized as one of the
