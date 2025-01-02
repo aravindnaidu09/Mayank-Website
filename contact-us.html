@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Mayank Infra Developers" />
-    <meta property="og:description" content="Mayank Infra Developers, a trusted real estate name, delivers affordable housing for 10 years, prioritizing customer satisfaction, quality, and community sustainability to build legacies." />
+    <meta property="og:description"
+        content="Mayank Infra Developers, a trusted real estate name, delivers affordable housing for 10 years, prioritizing customer satisfaction, quality, and community sustainability to build legacies." />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image" content="https://mayankinfra.com/assets/Images/MayankLogo.png" />
     <meta property="og:url" content="https://mayankinfra.com/" />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Mayank Infra Developers" />
+    <meta property="og:site_name" content="Mayank Infra Developers"   />
     <title>Projects - Mayank Infra Developers</title>
     <link rel="icon" type="image/x-icon" href="assets/images/MayankLogo.png">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
@@ -112,7 +113,8 @@
                     <span
                         class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full "></span>
                 </a>
-                <a href="contact-us.html" class="relative inline-block text-gold underline hover:text-gold transition duration-300 hover:-translate-y-1">
+                <a href="contact-us.html"
+                    class="relative inline-block text-gold underline hover:text-gold transition duration-300 hover:-translate-y-1">
                     Contact Us
                     <span
                         class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
@@ -155,124 +157,126 @@
     <!-- Hero Section -->
     <section class="py-16">
         <div class="container mx-auto px-4">
-          <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">Contact Us</h2>
-          <p class="text-center text-gray-600 mb-12">We'd love to hear from you! Fill out the form below and find our office location on the map.</p>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Contact Form -->
-            <div class="bg-white shadow-lg rounded-lg p-8">
-              <form id="contactForm" action="/send-email" method="POST">
-                <div class="mb-4">
-                  <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
-                  <input type="text" id="name" name="name" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">Contact Us</h2>
+            <p class="text-center text-gray-600 mb-12">We'd love to hear from you! Fill out the form below and find our
+                office location on the map.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Contact Form -->
+                <div class="bg-white shadow-lg rounded-lg p-8">
+                    <form id="contactForm" action="/send-email" method="POST">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Your Email</label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" required
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400">Send
+                            Message</button>
+                    </form>
                 </div>
-                <div class="mb-4">
-                  <label for="email" class="block text-gray-700 font-medium mb-2">Your Email</label>
-                  <input type="email" id="email" name="email" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+
+                <!-- Map -->
+                <div id="map" class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <!-- <iframe src="//www.google.com/maps/embed/v1/MAP_MODE?key=AIzaSyByl9CI618bwuJfrpQD7D0wueI-wlzchuU&parameters" width="100%"
+                        height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe> -->
                 </div>
-                <div class="mb-4">
-                  <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
-                  <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
-                </div>
-                <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400">Send Message</button>
-              </form>
+
             </div>
-    
-            <!-- Map -->
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d237.89042157086894!2d78.38611321951883!3d17.447900337978705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1734961968998!5m2!1sen!2sin" 
-                width="100%" 
-                height="350" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-              </iframe>
-            </div>
-          </div>
         </div>
     </section>
-   <!-- Footer -->
-   <section id="contact">
-    <footer class="bg-[#011E4A] text-white py-10">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                <!-- Logo and Social Links -->
-                <div>
-                    <div class="flex items-center mb-6">
-                        <div class="bg-white rounded-full w-16 h-16 flex items-center justify-center mr-4">
-                            <img src="assets/images/MayankLogo.png" alt="Mayank Logo" class="w-10 h-10" />
+    <!-- Footer -->
+    <section id="contact">
+        <footer class="bg-[#011E4A] text-white py-10">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                    <!-- Logo and Social Links -->
+                    <div>
+                        <div class="flex items-center mb-6">
+                            <div class="bg-white rounded-full w-16 h-16 flex items-center justify-center mr-4">
+                                <img src="assets/images/MayankLogo.png" alt="Mayank Logo" class="w-10 h-10" />
+                            </div>
+                            <h2 class="text-xl font-bold">Mayank Infra
+                                Developers</h2>
                         </div>
-                        <h2 class="text-xl font-bold">Mayank Infra
-                            Developers</h2>
+                        <div class="flex space-x-4 mb-6">
+                            <p>Follow us on :
+                                <span class="flex">
+                                    <img style="padding: 0.10rem;margin-right: 5px;"
+                                        onclick="window.open('http://www.google.com', '_blank');"
+                                        src="assets/icons/facebook.png" width="5%">
+                                    <img style="padding: 0.10rem; margin: 0 5px;"
+                                        onclick="window.open('http://www.google.com', '_blank');"
+                                        src="assets/icons/instagram.png" width="5%">
+                                    <img style="padding: 0.10rem;margin: 0 5px;"
+                                        onclick="window.open('http://www.google.com', '_blank');"
+                                        src="assets/icons/twitter.png" width="5%">
+                                    <img style="padding: 0.10rem;margin: 0 5px;"
+                                        onclick="window.open('http://www.google.com', '_blank');"
+                                        src="assets/icons/whatsapp.png" width="5%">
+                                    <img style="padding: 0.10rem;margin: 0 5px;"
+                                        onclick="window.open('http://www.google.com', '_blank');"
+                                        src="assets/icons/youtube.png" width="5%">
+                                </span>
+                        </div>
+                        <div class="relative mt-6">
+                            <form class="flex">
+                                <input type="email" placeholder="Enter Email"
+                                    class="flex-1 px-4 py-2 text-gray-700 rounded-full focus:outline-none" />
+                                <button type="submit"
+                                    class="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-4 py-2 ml-2 animate-bounce-on-hover">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </form>
+                        </div>
                     </div>
-                    <div class="flex space-x-4 mb-6">
-                        <p>Follow us on :
-                            <span class="flex">
-                                <img style="padding: 0.10rem;margin-right: 5px;"
-                                    onclick="window.open('http://www.google.com', '_blank');"
-                                    src="assets/icons/facebook.png" width="5%">
-                                <img style="padding: 0.10rem; margin: 0 5px;"
-                                    onclick="window.open('http://www.google.com', '_blank');"
-                                    src="assets/icons/instagram.png" width="5%">
-                                <img style="padding: 0.10rem;margin: 0 5px;"
-                                    onclick="window.open('http://www.google.com', '_blank');"
-                                    src="assets/icons/twitter.png" width="5%">
-                                <img style="padding: 0.10rem;margin: 0 5px;"
-                                    onclick="window.open('http://www.google.com', '_blank');"
-                                    src="assets/icons/whatsapp.png" width="5%">
-                                <img style="padding: 0.10rem;margin: 0 5px;"
-                                    onclick="window.open('http://www.google.com', '_blank');"
-                                    src="assets/icons/youtube.png" width="5%">
-                            </span>
+                    <!-- Company Links -->
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Company</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Projects</a>
+                            </li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">About
+                                    Us</a>
+                            </li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Contact
+                                    Us</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="relative mt-6">
-                        <form class="flex">
-                            <input type="email" placeholder="Enter Email"
-                                class="flex-1 px-4 py-2 text-gray-700 rounded-full focus:outline-none" />
-                            <button type="submit"
-                                class="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-4 py-2 ml-2 animate-bounce-on-hover">
-                                <i class="fas fa-arrow-right"></i>
-                            </button>
-                        </form>
+                    <!-- Contact Information -->
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Contact
+                            Us</h3>
+                        <p class="text-gray-400 mb-2">D3T Tech Hub, Plot
+                            No 5 & 6, 4th Floor</p>
+                        <p class="text-gray-400 mb-2">Silicon Valley,
+                            Madhapur</p>
+                        <p class="text-gray-400 mb-2">Hyderabad,
+                            Telangana, 500081</p>
+                        <a href="mailto:info@mayankinfra.com"
+                            class="text-gray-400 hover:text-white transition duration-300">
+                            info@mayankinfra.com
+                        </a>
+                        <!-- <p class="text-gray-400 mt-2">+1(888)-123-4587</p> -->
                     </div>
-                </div>
-                <!-- Company Links -->
-                <div>
-                    <h3 class="text-lg font-bold mb-4">Company</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Projects</a>
-                        </li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">About
-                                Us</a>
-                        </li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Contact
-                                Us</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Contact Information -->
-                <div>
-                    <h3 class="text-lg font-bold mb-4">Contact
-                        Us</h3>
-                    <p class="text-gray-400 mb-2">D3T Tech Hub, Plot
-                        No 5 & 6, 4th Floor</p>
-                    <p class="text-gray-400 mb-2">Silicon Valley,
-                        Madhapur</p>
-                    <p class="text-gray-400 mb-2">Hyderabad,
-                        Telangana, 500081</p>
-                    <a href="mailto:info@mayankinfra.com"
-                        class="text-gray-400 hover:text-white transition duration-300">
-                        info@mayankinfra.com
-                    </a>
-                    <!-- <p class="text-gray-400 mt-2">+1(888)-123-4587</p> -->
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-</section>
+    </section>
     <script>
         ScrollReveal().reveal('.fade-in', { delay: 300, distance: '50px', duration: 1000, easing: 'cubic-bezier(0.5, 0, 0, 1)' });
 
@@ -321,11 +325,33 @@
             showNavBar();
         });
 
-        function downloadPDF(){
+        function downloadPDF() {
             const link = document.createElement('a');
-                link.href = './assets/pdf/Omkara_Project.pdf';
-                link.download = 'Omkara_Project_Details.pdf';
-                link.click();
+            link.href = './assets/pdf/Omkara_Project.pdf';
+            link.download = 'Omkara_Project_Details.pdf';
+            link.click();
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByl9CI618bwuJfrpQD7D0wueI-wlzchuU&callback=initMap"
+        async defer>
+        </script>
+    <script>
+        function initMap() {
+            // Coordinates (latitude, longitude). Example: Times Square, NYC
+            var location = { lat: 17.447900337978705, lng: 78.38611321951883 };
+
+            // Create a map object and specify the DOM element
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 14,                // zoom level
+                center: location         // center the map at the given coords
+            });
+
+            // Optional: Add a marker
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                title: 'Our Office'
+            });
         }
     </script>
 </body>
