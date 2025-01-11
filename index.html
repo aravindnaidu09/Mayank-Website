@@ -206,56 +206,65 @@
     <Section class="">
         <div class="md:flex justify-center items-center bg-gray-100 gap-4">
             <!-- Card -->
-            <div class="relative w-full max-w-sm bg-white border border-gray-300 rounded-lg shadow-lg overflow-hidden group m-1">
+            <div class="relative w-full bg-white border border-gray-300 rounded-lg shadow-lg overflow-hidden group m-1">
               <!-- Default Content (Icon + Title) -->
               <div class="flex flex-col items-center justify-center p-6 transition-opacity duration-300 group-hover:opacity-0">
                 <div class="text-4xl text-gray-500">
                   🏠
                 </div>
-                <h3 class="mt-4 text-lg font-semibold text-gray-800">Luxury Lifestyle</h3>
+                <h3 class="mt-4 text-lg font-semibold text-[#011E4A]">Luxury Lifestyle</h3>
+                <p class="md:hidden text-md text-[#96770b]">
+                    A life of luxury awaits you in our carefully curated real estate portfolio
+                  </p>
               </div>
           
               <!-- Hover Content (Description Text) -->
               <div
                 class="absolute inset-0 items-center justify-center bg-white text-center p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                <h3 class="text-lg font-semibold text-gray-800">Luxury Lifestyle</h3>
-                <p class="text-md text-gray-700">
+                <h3 class="text-lg font-semibold text-[#011E4A]">Luxury Lifestyle</h3>
+                <p class="text-md text-[#96770b]">
                   A life of luxury awaits you in our carefully curated real estate portfolio
                 </p>
               </div>
             </div>
-            <div class="relative w-full max-w-sm bg-white border border-gray-300 rounded-lg shadow-lg overflow-hidden group m-1">
+            <div class="relative w-full bg-white border border-gray-300 rounded-lg shadow-lg overflow-hidden group m-1">
                 <!-- Default Content (Icon + Title) -->
                 <div class="flex flex-col items-center justify-center p-6 transition-opacity duration-300 group-hover:opacity-0">
                   <div class="text-4xl text-gray-500">
                     🛡️
                   </div>
-                  <h3 class="mt-4 text-lg font-semibold text-gray-800">Financial Security</h3>
+                  <h3 class="mt-4 text-lg font-semibold text-[#011E4A]">Financial Security</h3>
+                  <p class="md:hidden text-md text-[#96770b]">
+                    Find peace of mind in real estate's promise of financial security
+                  </p>
                 </div>
             
                 <!-- Hover Content (Description Text) -->
                 <div
                   class="absolute inset-0 items-center justify-center bg-white text-center p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <h3 class="text-lg font-semibold text-gray-800">Financial Security</h3>
-                  <p class="text-md text-gray-700">
+                  <h3 class="text-lg font-semibold text-[#011E4A]">Financial Security</h3>
+                  <p class="text-md text-[#96770b]">
                     Find peace of mind in real estate's promise of financial security
                   </p>
                 </div>
               </div>
-              <div class="relative w-full max-w-sm bg-white border border-gray-300 rounded-lg shadow-lg overflow-hidden group m-1">
+              <div class="relative w-full bg-white border border-gray-300 rounded-lg shadow-lg overflow-hidden group m-1">
                 <!-- Default Content (Icon + Title) -->
                 <div class="flex flex-col items-center justify-center p-6 transition-opacity duration-300 group-hover:opacity-0">
                   <div class="text-4xl text-gray-500">
                     📈
                   </div>
-                  <h3 class="mt-4 text-lg font-semibold text-gray-800">Return On Investment (ROI)</h3>
+                  <h3 class="mt-4 text-lg font-semibold text-[#011E4A]">Return On Investment (ROI)</h3>
+                  <p class="md:hidden text-md text-[#96770b]">
+                    Discover the secrets of high ROI with our real estate expertise
+                  </p>
                 </div>
             
                 <!-- Hover Content (Description Text) -->
                 <div
                   class="absolute inset-0 items-center justify-center bg-white text-center p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <h3 class="text-lg font-semibold text-gray-800">Return On Investment (ROI)</h3>
-                  <p class="text-md text-gray-700">
+                  <h3 class="text-lg font-semibold text-[#011E4A]">Return On Investment (ROI)</h3>
+                  <p class="text-md text-[#96770b]">
                     Discover the secrets of high ROI with our real estate expertise
                   </p>
                 </div>
@@ -268,6 +277,52 @@
           
           
     </Section>
+
+    <section class="TargetProgressbar">
+        <div class="flex flex-col lg:flex-row items-center lg:items-start gap-8 p-8 bg-gray-100">
+            <!-- Image Section -->
+            <div class="w-full lg:w-1/2">
+              <img src="./assets/images/target-concept-paper.jpg" alt="Target Image" class="w-full rounded-lg shadow-md">
+            </div>
+          
+            <!-- Progress Bar Section -->
+            <div class="w-full lg:w-1/2">
+              <!-- Progress Bar Item 1 -->
+              <div class="mb-4">
+                <div class="flex justify-between items-center">
+                  <span class="text-[#011E4A] font-semibold">Ensured Quality</span>
+                  <span class="text-[#011E4A] font-semibold" id="progress-label-1">0%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                  <div id="progress-bar-1" class="h-2.5 rounded-full" style="width: 0%; background-color:#96770a;"></div>
+                </div>
+              </div>
+          
+              <!-- Progress Bar Item 2 -->
+              <div class="mb-4">
+                <div class="flex justify-between items-center">
+                  <span class="text-[#011E4A] font-semibold">Client Contentedness</span>
+                  <span class="text-[#011E4A] font-semibold" id="progress-label-2">0%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                  <div id="progress-bar-2" class="h-2.5 rounded-full" style="width: 0%; background-color:#96770a;"></div>
+                </div>
+              </div>
+          
+              <!-- Progress Bar Item 3 -->
+              <div>
+                <div class="flex justify-between items-center">
+                  <span class="text-[#011E4A] font-semibold">Return Rate</span>
+                  <span class="text-[#011E4A] font-semibold" id="progress-label-3">0%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                  <div id="progress-bar-3" class="h-2.5 rounded-full" style="width: 0%; background-color:#96770a;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+    </section>
     <!-- Tabs -->
     <section class="py-12 bg-gray-100">
         <div class="container mx-auto">
@@ -286,15 +341,15 @@
                 </div>
                 <!-- Tabs Content -->
                 <div id="tab1-content" class="tab-content p-6">
-                    <p class="text-gray-700">This is content for Tab 1. Lorem ipsum dolor sit amet, consectetur
+                    <p class="text-[#96770b]">This is content for Tab 1. Lorem ipsum dolor sit amet, consectetur
                         adipiscing elit.</p>
                 </div>
                 <div id="tab2-content" class="tab-content p-6 hidden">
-                    <p class="text-gray-700">This is content for Tab 2. Lorem ipsum dolor sit amet, consectetur
+                    <p class="text-[#96770b]">This is content for Tab 2. Lorem ipsum dolor sit amet, consectetur
                         adipiscing elit.</p>
                 </div>
                 <div id="tab3-content" class="tab-content p-6 hidden">
-                    <p class="text-gray-700">This is content for Tab 3. Lorem ipsum dolor sit amet, consectetur
+                    <p class="text-[#96770b]">This is content for Tab 3. Lorem ipsum dolor sit amet, consectetur
                         adipiscing elit.</p>
                 </div>
             </div>
@@ -433,7 +488,7 @@
                         <div class="relative mt-6">
                             <form class="flex">
                                 <input type="email" placeholder="Enter Email"
-                                    class="flex-1 px-4 py-2 text-gray-700 rounded-full focus:outline-none" />
+                                    class="flex-1 px-4 py-2 text-[#96770b] rounded-full focus:outline-none" />
                                 <button type="submit"
                                     class="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-4 py-2 ml-2 animate-bounce-on-hover">
                                     <i class="fas fa-arrow-right"></i>
@@ -586,7 +641,50 @@
     updateCarousel();
 });
     </script>
-
+    <!-- target Progrssbar -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Function to animate progress bars
+      const animateProgressBars = () => {
+        const progressBars = [
+          { id: 'progress-bar-1', label: 'progress-label-1', target: 99 },
+          { id: 'progress-bar-2', label: 'progress-label-2', target: 95 },
+          { id: 'progress-bar-3', label: 'progress-label-3', target: 99 }
+        ];
+  
+        progressBars.forEach(({ id, label, target }) => {
+          const progressBar = document.getElementById(id);
+          const progressLabel = document.getElementById(label);
+          let currentProgress = 0;
+  
+          const interval = setInterval(() => {
+            if (currentProgress <= target) {
+              progressBar.style.width = `${currentProgress}%`;
+              progressLabel.textContent = `${currentProgress}%`;
+              currentProgress++;
+            } else {
+              clearInterval(interval);
+            }
+          }, 20); // Adjust speed by changing interval time
+        });
+      };
+  
+      // Trigger animation when the section enters the viewport
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              animateProgressBars();
+              observer.disconnect(); // Stop observing after animation triggers
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+  
+      observer.observe(document.querySelector('.flex')); // Target your container element
+    });
+  </script>
     <!-- Tabs -->
     <script>
         const tabs = document.querySelectorAll(".tab-btn");
