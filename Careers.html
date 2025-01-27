@@ -13,14 +13,13 @@
     <meta property="og:url" content="https://mayankinfra.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Mayank Infra Developers"   />
-    <title>Projects - Mayank Infra Developers</title>
+    <title>Careers - Mayank Infra Developers</title>
     <link rel="icon" type="image/x-icon" href="assets/images/MayankLogo.png">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
     <link href="./dist/output.css" rel="stylesheet">
-
     <style>
         body {
             font-family: 'Maven Pro', sans-serif;
@@ -38,7 +37,12 @@
             opacity: 0;
             animation: fade-in 1s ease-in-out forwards;
         }
-
+        .h-36Rem{
+            height: 36rem;
+        }
+        .borderGolder{
+            border-color: #96770a
+        }
         @keyframes fade-in {
             0% {
                 opacity: 0;
@@ -68,25 +72,27 @@
                 /* Hide the .hide class */
             }
         }
+        .perspective {
+    perspective: 1000px;
+}
     </style>
-    <script>
-        module.exports = {
-            theme: {
-                screens: {
-                    sm: '640px',
-                    md: '768px',
-                    lg: '1024px', // Ensure this breakpoint exists
-                    xl: '1280px',
-                },
-            },
-        };
-    </script>
 </head>
 
 <body class="bg-gray-50 text-[#011E4A]">
+    
     <!-- Navbar Section -->
     <nav id="navbar"
         class="bg-white text-[#011E4A] shadow-md font-maven fixed top-0 left-0 w-full z-50 transition duration-300 ease-in-out">
+        <div class="h-8 justify-end text-white" style="background-color: #060049;">
+         <span class="mx-2" style="float: inline-end;">
+            <a href="mailto:info@mayankinfra.com">
+                <i class="fas fa-envelope"></i> info@mayankinfra.com
+            </a>
+            <a href="tel:9948481995" class="ml-4">
+                <i class="fas fa-phone"></i> 9948481995
+            </a>
+        </span>
+        </div>
         <div class="container mx-auto px-4 flex justify-between items-center">
             <!-- Logo Section -->
             <div class="text-lg font-bold">
@@ -96,8 +102,13 @@
             <!-- Navigation Links -->
             <div class="hidden lg:flex space-x-6">
                 <a href="index.html"
-                    class="relative inline-block text-gold underline hover:text-gold transition duration-300 hover:-translate-y-1">
-                    Home
+                    class="relative inline-block text-[#011E4A] hover:text-gold transition duration-300 hover:-translate-y-1">
+                    <i class="fas fa-home"></i>
+                    <span
+                        class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full "></span>
+                </a><a href="about-us.html"
+                    class="relative inline-block text-[#011E4A] hover:text-gold transition duration-300 hover:-translate-y-1">
+                    About Us
                     <span
                         class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full "></span>
                 </a>
@@ -107,14 +118,20 @@
                     <span
                         class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full "></span>
                 </a>
-                <a href="about-us.html"
+                <a href="Blog.html"
                     class="relative inline-block text-[#011E4A] hover:text-gold transition duration-300 hover:-translate-y-1">
-                    About Us
+                    Blog
+                    <span
+                        class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full "></span>
+                </a>
+                <a href="Careers.html"
+                    class="relative inline-block text-gold underline hover:text-gold transition duration-300 hover:-translate-y-1">
+                    Careers
                     <span
                         class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full "></span>
                 </a>
                 <a href="contact-us.html"
-                    class="relative inline-block text-[#011E4A] hover:text-gold transition duration-300 hover:-translate-y-1">
+                    class="">
                     Contact Us
                     <span
                         class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
@@ -122,14 +139,20 @@
             </div>
         </div>
     </nav>
-
+    
     <!-- Sticky Mobile Navbar Section -->
     <div id="navBar"
-        class="bg-white shadow border-b sticky top-16 rounded-full z-50 transition duration-300 ease-in-out lg:hidden">
+        class="bg-white shadow border-b sticky top-24 rounded-full z-50 transition duration-300 ease-in-out lg:hidden">
         <div class="flex justify-between items-center overflow-x-auto whitespace-nowrap px-4 py-2">
             <a href="index.html"
-                class="relative inline-block text-gold underline transition duration-300 hover:text-gold hover:-translate-y-1">
+                class="relative inline-block text-[#011E4A] transition duration-300 hover:text-gold hover:-translate-y-1">
                 Home
+                <span
+                    class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
+            </a>
+            <a href="about-us.html"
+                class="relative inline-block text-[#011E4A] transition duration-300 hover:text-gold hover:-translate-y-1">
+                About Us
                 <span
                     class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
             </a>
@@ -139,9 +162,15 @@
                 <span
                     class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
             </a>
-            <a href="about-us.html"
+            <a href="Blog.html"
                 class="relative inline-block text-[#011E4A] transition duration-300 hover:text-gold hover:-translate-y-1">
-                About Us
+                Blog
+                <span
+                    class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
+            </a>
+            <a href="Careers.html"
+                class="relative inline-block text-gold underline transition duration-300 hover:text-gold hover:-translate-y-1">
+                Careers
                 <span
                     class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
             </a>
@@ -153,202 +182,7 @@
             </a>
         </div>
     </div>
-
-    <!-- Hero Section -->
-    <section class="relative bg-gray-50 mt-16">
-        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center" style="max-height: fit-content;">
-            <!-- Text Content -->
-            <div class="w-full lg:w-1/2 justify-items-center">
-                <img class="fade-in justify-items-center text-center" src="./assets/images/OmKaraLogo.png" alt=""
-                    srcset="" style="height: 4rem;">
-
-                <!-- <p class="text-xl text-gray-600 mt-4 fade-in delay-200">
-                    Luxurious Villa Plots at Zaheerabad
-                </p> -->
-            </div>
-            <!-- Hero Image -->
-            <div class="w-full lg:w-1/2">
-                <div class="relative">
-                    <img src="assets/images/projects-hero-image.jpg" alt="Omkara Projects Hero Image"
-                        class="w-full h-full object-cover rounded-lg shadow-lg">
-                    <div class="absolute inset-0 bg-black opacity-30 rounded-lg"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- carosole -->
-    <section class="py-12 bg-gray-100">
-        <div class="container mx-auto">
-            <h3 class="text-3xl text-center font-bold mb-8">Image Carousel</h3>
-            <div class="relative overflow-hidden w-full bg-gray-200 rounded-lg">
-                <!-- Carousel Wrapper -->
-                <div id="carousel-wrapper" class="flex transition-transform duration-500">
-                    <!-- Slide 1 -->
-                    <div class="flex-shrink-0 w-full h-64">
-                        <img src="./assets/images/CarosuelImages/grass-field-daytime.jpg" alt="Slide 1" class="w-full h-full object-cover" />
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="flex-shrink-0 w-full h-64">
-                        <img src="./assets/images/CarosuelImages/landscape-courtyard-monastery.jpg" alt="Slide 2" class="w-full h-full object-cover" />
-                    </div>
-                    <!-- Slide 3 -->
-                    <div class="flex-shrink-0 w-full h-64">
-                        <img src="./assets/images/CarosuelImages/modern-country-houses-construction.jpg" alt="Slide 3" class="w-full h-full object-cover" />
-                    </div>
-                    <div class="flex-shrink-0 w-full h-64">
-                        <img src="./assets/images/CarosuelImages/palace-china.jpg" alt="Slide 1" class="w-full h-full object-cover" />
-                    </div>
-                    <div class="flex-shrink-0 w-full h-64">
-                        <img src="./assets/images/projects-hero-image.jpg" alt="Slide 1" class="w-full h-full object-contain" />
-                    </div>
-                    <!-- <div class="flex-shrink-0 w-full h-64">
-                        <img src="./assets/images/CarosuelImages/grass-field-daytime.jpg" alt="Slide 1" class="w-full h-full object-contain" />
-                    </div>
-                    <div class="flex-shrink-0 w-full h-64">
-                        <img src="./assets/images/CarosuelImages/grass-field-daytime.jpg" alt="Slide 6" class="w-full h-full object-contain" />
-                    </div> -->
-                </div>
-
-                <!-- Navigation Arrows -->
-                <button id="prev-btn"
-                    class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2 hover:bg-gray-700">
-                    &#8249;
-                </button>
-                <button id="next-btn"
-                    class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2 hover:bg-gray-700">
-                    &#8250;
-                </button>
-            </div>
-        </div>
-    </section>
-    <!-- Tabs -->
-    <section class="py-12 bg-gray-100">
-        <div class="container mx-auto">
-            <h3 class="text-3xl text-center font-bold mb-8">Explore More</h3>
-            <div class="bg-white shadow-md rounded-md">
-                <!-- Tabs Header -->
-                <div class="flex border-b">
-                    <button id="tab1-btn"
-                        class="tab-btn text-blue-600 font-bold px-4 py-2 border-b-2 border-blue-600">Ongoing
-                        Projects</button>
-                    <button id="tab2-btn"
-                        class="tab-btn text-gray-600 px-4 py-2 border-b-2 hover:text-blue-600">Residential
-                        Projects</button>
-                    <button id="tab3-btn" class="tab-btn text-gray-600 px-4 py-2 border-b-2 hover:text-blue-600">Farm
-                        Lands</button>
-                </div>
-                <!-- Tabs Content -->
-                <div id="tab1-content" class="tab-content p-6">
-                    <p class="text-gray-700">This is content for Tab 1. Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit.</p>
-                </div>
-                <div id="tab2-content" class="tab-content p-6 hidden">
-                    <p class="text-gray-700">This is content for Tab 2. Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit.</p>
-                </div>
-                <div id="tab3-content" class="tab-content p-6 hidden">
-                    <p class="text-gray-700">This is content for Tab 3. Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Counts Section -->
-    <section id="counts-section" class="py-12 bg-white">
-        <div class="container mx-auto text-center">
-            <h3 class="text-3xl font-bold mb-8">Our Achievements</h3>
-            <div class="grid md:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-center">
-                <!-- Count 1 -->
-                <div class="p-4 bg-gray-100 rounded shadow">
-                    <h4 class="text-4xl font-bold text-blue-600" data-target="120">0</h4>
-                    <p class="text-gray-600 mt-2">Projects Completed</p>
-                </div>
-                <!-- Count 2 -->
-                <div class="p-4 bg-gray-100 rounded shadow">
-                    <h4 class="text-4xl font-bold text-blue-600" data-target="50">0</h4>
-                    <p class="text-gray-600 mt-2">Happy Clients</p>
-                </div>
-                <!-- Count 3 -->
-                <div class="p-4 bg-gray-100 rounded shadow">
-                    <h4 class="text-4xl font-bold text-blue-600" data-target="10">0</h4>
-                    <p class="text-gray-600 mt-2">Awards Won</p>
-                </div>
-                <!-- Count 4 -->
-                <div class="p-4 bg-gray-100 rounded shadow">
-                    <h4 class="text-4xl font-bold text-blue-600" data-target="5">0</h4>
-                    <p class="text-gray-600 mt-2">Years of Experience</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Project Features Section -->
-    <!-- <section class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center fade-in lg:text-[#011E4A] sm:text-[#011E4A] ">Where
-                Opportunities Meet Infrastructure</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 fade-in delay-200">
-                <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
-                    <i class="fas fa-road text-3xl text-gold mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">CC Roads</h3>
-                    <p class="text-gray-600">Well-planned and high-quality
-                        concrete roads for convenient access.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
-                    <i class="fas fa-tree text-3xl text-gold mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Avenue
-                        Plantation</h3>
-                    <p class="text-gray-600">Beautifully landscaped
-                        plantations along all the roads.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
-                    <i class="fas fa-water text-3xl text-gold mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Water Tank</h3>
-                    <p class="text-gray-600">State-of-the-art water tank
-                        ensuring continuous water supply.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
-                    <i class="fas fa-play text-3xl text-gold mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Children's Play
-                        Area</h3>
-                    <p class="text-gray-600">Dedicated spaces for kids to
-                        play and enjoy safely.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
-                    <i class="fas fa-seedling text-3xl text-gold mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Underground
-                        Drainage</h3>
-                    <p class="text-gray-600">Well-maintained drainage
-                        systems for clean surroundings.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
-                    <i class="fas fa-tint text-3xl text-gold mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Water Lines</h3>
-                    <p class="text-gray-600">Advanced infrastructure for
-                        uninterrupted water services.</p>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Layout Plan Section -->
-    <!-- <section class="py-16 bg-blue-50">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center fade-in">Layout
-                Plan</h2>
-            <p class="text-center text-gray-600 mt-2 fade-in delay-100">
-                Discover the thoughtfully designed layout for a harmonious
-                living experience.
-            </p>
-            <div class="text-center p-6 rounded-lg">
-                <a onclick="downloadPDF()"
-                    class="flex justify-center items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400">
-                    <img src="./assets/icons/pdf_4726010.png" alt="PDF Icon" class="w-6 h-6 mr-2" />
-                    <span>Download PDF</span>
-                </a>
-            </div>
-    </section> -->
-
+<h6 style="height: 100vh!important" class="text-center text-gold">Careers Comming Soon</h6>
     <!-- Footer Section -->
     <section id="contact">
         <footer class="bg-[#011E4A] text-white py-10">
@@ -363,12 +197,12 @@
                             <h2 class="text-xl font-bold">Mayank Infra
                                 Developers</h2>
                         </div>
-<spam class="pb-2 mb-2">
-        <p class="text-gray-400">Mayank Infra Developers, a trusted real estate name, delivers
-            affordable housing for 10 years, prioritizing customer satisfaction, quality, and community
-            sustainability to build legacies.</p>
-    </spam>
-<div class="flex space-x-4 mb-6">
+                        <spam class="pb-2 mb-2">
+                            <p class="text-gray-400">Mayank Infra Developers, a trusted real estate name, delivers
+                                affordable housing for 10 years, prioritizing customer satisfaction, quality, and community
+                                sustainability to build legacies.</p>
+                        </spam>
+                        <div class="flex space-x-4 mb-6">
                             
 <p>Follow us on :
         <span class="flex">
@@ -389,7 +223,16 @@
                 src="assets/icons/youtube.png" width="5%">
         </span>
                         </div>
-                        
+                        <div class="relative mt-6">
+                            <form class="flex">
+                                <input type="email" placeholder="Enter Email"
+                                    class="flex-1 px-4 py-2 text-[#96770b] rounded-full focus:outline-none" />
+                                <button type="submit"
+                                    class="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-4 py-2 ml-2 animate-bounce-on-hover">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </form>
+                        </div>
                     </div>
                     <!-- Company Links -->
                     <div>
@@ -485,28 +328,101 @@
     </script>
     <!-- Carosoule -->
     <script>
-        const wrapper = document.getElementById("carousel-wrapper");
-        const slides = wrapper.children;
-        const totalSlides = slides.length;
+      document.addEventListener("DOMContentLoaded", () => {
+    const carouselWrapper = document.getElementById("carousel-wrapper");
+    const slides = carouselWrapper.children;
+    const dots = document.querySelectorAll("#carousel-pagination .dot");
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
 
-        let currentIndex = 0;
+    let currentIndex = 0;
+    const slideCount = slides.length;
+    const slideWidth = slides[0].offsetWidth;
+    const autoScrollInterval = 3000;
 
-        const showSlide = (index) => {
-            const offset = -index * 100;
-            wrapper.style.transform = `translateX(${offset}%)`;
-        };
-
-        document.getElementById("prev-btn").addEventListener("click", () => {
-            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-            showSlide(currentIndex);
+    const updateCarousel = () => {
+        carouselWrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        dots.forEach((dot, index) => {
+            dot.classList.toggle("bg-gray-800", index === currentIndex);
+            dot.classList.toggle("bg-gray-400", index !== currentIndex);
         });
+    };
 
-        document.getElementById("next-btn").addEventListener("click", () => {
-            currentIndex = (currentIndex + 1) % totalSlides;
-            showSlide(currentIndex);
+    const nextSlide = () => {
+        currentIndex = (currentIndex + 1) % slideCount;
+        updateCarousel();
+    };
+
+    const prevSlide = () => {
+        currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+        updateCarousel();
+    };
+
+    // Event Listeners
+    nextBtn.addEventListener("click", nextSlide);
+    prevBtn.addEventListener("click", prevSlide);
+    dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+            currentIndex = index;
+            updateCarousel();
         });
+    });
+
+    // Auto Scroll
+    let autoScroll = setInterval(nextSlide, autoScrollInterval);
+
+    // Pause auto scroll on hover
+    carouselWrapper.addEventListener("mouseover", () => clearInterval(autoScroll));
+    carouselWrapper.addEventListener("mouseout", () => (autoScroll = setInterval(nextSlide, autoScrollInterval)));
+
+    // Initial Setup
+    updateCarousel();
+});
     </script>
-
+    <!-- target Progrssbar -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Function to animate progress bars
+      const animateProgressBars = () => {
+        const progressBars = [
+          { id: 'progress-bar-1', label: 'progress-label-1', target: 99 },
+          { id: 'progress-bar-2', label: 'progress-label-2', target: 95 },
+          { id: 'progress-bar-3', label: 'progress-label-3', target: 99 }
+        ];
+  
+        progressBars.forEach(({ id, label, target }) => {
+          const progressBar = document.getElementById(id);
+          const progressLabel = document.getElementById(label);
+          let currentProgress = 0;
+  
+          const interval = setInterval(() => {
+            if (currentProgress <= target) {
+              progressBar.style.width = `${currentProgress}%`;
+              progressLabel.textContent = `${currentProgress}%`;
+              currentProgress++;
+            } else {
+              clearInterval(interval);
+            }
+          }, 20); // Adjust speed by changing interval time
+        });
+      };
+  
+      // Trigger animation when the section enters the viewport
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              animateProgressBars();
+              observer.disconnect(); // Stop observing after animation triggers
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+  
+      observer.observe(document.querySelector('.flex')); // Target your container element
+    });
+  </script>
     <!-- Tabs -->
     <script>
         const tabs = document.querySelectorAll(".tab-btn");
@@ -514,10 +430,10 @@
 
         tabs.forEach((tab, index) => {
             tab.addEventListener("click", () => {
-                tabs.forEach((t) => t.classList.remove("text-blue-600", "text-gray-600", "font-bold", "border-blue-600"));
+                tabs.forEach((t) => t.classList.remove("text-[#011E4A]", "text-gray-600", "font-bold", "borderGolder"));
                 contents.forEach((c) => c.classList.add("hidden"));
 
-                tab.classList.add("text-blue-600", "font-bold", "border-blue-600");
+                tab.classList.add("text-[#011E4A]", "font-bold", "borderGolder");
                 contents[index].classList.remove("hidden");
             });
         });
@@ -562,6 +478,24 @@
 
         observer.observe(document.querySelector("#counts-section"));
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const buttons = document.querySelectorAll('[data-target]');
+          buttons.forEach((button) => {
+            button.addEventListener('click', () => {
+              const target = document.querySelector(button.getAttribute('data-target'));
+              if (target.classList.contains('hidden')) {
+                target.classList.remove('hidden');
+                button.querySelector('span').textContent = '-';
+              } else {
+                target.classList.add('hidden');
+                button.querySelector('span').textContent = '+';
+              }
+            });
+          });
+        });
+      </script>
+      
 </body>
 
 </html>

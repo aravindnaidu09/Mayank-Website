@@ -87,6 +87,16 @@
     <!-- Navbar Section -->
     <nav id="navbar"
         class="bg-white text-[#011E4A] shadow-md font-maven fixed top-0 left-0 w-full z-50 transition duration-300 ease-in-out">
+        <div class="h-8 justify-end text-white" style="background-color: #060049;">
+         <span class="mx-2" style="float: inline-end;">
+            <a href="mailto:info@mayankinfra.com">
+                <i class="fas fa-envelope"></i> info@mayankinfra.com
+            </a>
+            <a href="tel:9948481995" class="ml-4">
+                <i class="fas fa-phone"></i> 9948481995
+            </a>
+        </span>
+        </div>
         <div class="container mx-auto px-4 flex justify-between items-center">
             <!-- Logo Section -->
             <div class="text-lg font-bold">
@@ -100,6 +110,11 @@
                     Home
                     <span
                         class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full "></span>
+                </a><a href="about-us.html"
+                    class="relative inline-block text-[#011E4A] hover:text-gold transition duration-300 hover:-translate-y-1">
+                    About Us
+                    <span
+                        class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full "></span>
                 </a>
                 <a href="projects.html"
                     class="relative inline-block text-[#011E4A] hover:text-gold transition duration-300 hover:-translate-y-1">
@@ -107,9 +122,15 @@
                     <span
                         class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full "></span>
                 </a>
-                <a href="about-us.html"
+                <a href="Blog.html"
                     class="relative inline-block text-[#011E4A] hover:text-gold transition duration-300 hover:-translate-y-1">
-                    About Us
+                    Blog
+                    <span
+                        class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full "></span>
+                </a>
+                <a href="Careers.html"
+                    class="relative inline-block text-[#011E4A] hover:text-gold transition duration-300 hover:-translate-y-1">
+                    Careers
                     <span
                         class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full "></span>
                 </a>
@@ -122,14 +143,20 @@
             </div>
         </div>
     </nav>
-
+    
     <!-- Sticky Mobile Navbar Section -->
     <div id="navBar"
-        class="bg-white shadow border-b sticky top-16 rounded-full z-50 transition duration-300 ease-in-out lg:hidden">
+        class="bg-white shadow border-b sticky top-24 rounded-full z-50 transition duration-300 ease-in-out lg:hidden">
         <div class="flex justify-between items-center overflow-x-auto whitespace-nowrap px-4 py-2">
             <a href="index.html"
                 class="relative inline-block text-[#011E4A] transition duration-300 hover:text-gold hover:-translate-y-1">
                 Home
+                <span
+                    class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
+            </a>
+            <a href="about-us.html"
+                class="relative inline-block text-[#011E4A] transition duration-300 hover:text-gold hover:-translate-y-1">
+                About Us
                 <span
                     class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
             </a>
@@ -139,9 +166,15 @@
                 <span
                     class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
             </a>
-            <a href="about-us.html"
+            <a href="Blog.html"
                 class="relative inline-block text-[#011E4A] transition duration-300 hover:text-gold hover:-translate-y-1">
-                About Us
+                Blog
+                <span
+                    class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
+            </a>
+            <a href="Careers.html"
+                class="relative inline-block text-[#011E4A] transition duration-300 hover:text-gold hover:-translate-y-1">
+                Careers
                 <span
                     class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-gold transition-all duration-300 hover:w-full"></span>
             </a>
@@ -153,9 +186,78 @@
             </a>
         </div>
     </div>
-
+    <section class="py-24">
+        <div class="text-center">
+         <h2 class="text-2xl md:text-3xl font-semibold text-[#011E4A] relative">
+             Frequently asked questions
+             
+           </h2>
+           <p class="mt-2 text-gray-500">
+             Find quick answers to common questions using our helpful FAQs.
+           </p>
+        </div>
+         <div class="flex flex-col lg:flex-row justify-center items-start gap-12 p-8 bg-gray-100">
+            
+             <!-- FAQ Section -->
+             <div class="w-full lg:w-2/3">
+               <!-- FAQ Title -->
+               
+           
+               <!-- FAQ Items -->
+               <div class="mt-6 space-y-4">
+                 <!-- FAQ Item 1 -->
+                 <div class="border border-gray-300 rounded-lg shadow-sm">
+                   <button class="w-full flex justify-between items-center p-4 text-left text-gray-700 font-semibold hover:bg-gray-100 focus:outline-none" data-target="#faq1">
+                     1. What does Hyderabad's real estate market look like in the next 5 years?
+                     <span class="text-[#011E4A]">+</span>
+                   </button>
+                   <div id="faq1" class="hidden p-4 text-sm text-gray-600">
+                     Hyderabad’s real estate market is poised for consistent growth, driven by IT developments and infrastructural expansions.
+                   </div>
+                 </div>
+           
+                 <!-- FAQ Item 2 -->
+                 <div class="border border-gray-300 rounded-lg shadow-sm">
+                   <button class="w-full flex justify-between items-center p-4 text-left text-gray-700 font-semibold hover:bg-gray-100 focus:outline-none" data-target="#faq2">
+                     2. Is now the right time to invest in Hyderabad’s real estate?
+                     <span class="text-[#011E4A]">+</span>
+                   </button>
+                   <div id="faq2" class="hidden p-4 text-sm text-gray-600">
+                     Yes, with Hyderabad's steady growth in IT sectors and infrastructure, it’s an excellent time to invest.
+                   </div>
+                 </div>
+           
+                 <!-- FAQ Item 3 -->
+                 <div class="border border-gray-300 rounded-lg shadow-sm">
+                   <button class="w-full flex justify-between items-center p-4 text-left text-gray-700 font-semibold hover:bg-gray-100 focus:outline-none" data-target="#faq3">
+                     3. Why is real estate the top-notch investment form?
+                     <span class="text-[#011E4A]">+</span>
+                   </button>
+                   <div id="faq3" class="hidden p-4 text-sm text-gray-600">
+                     Real estate offers stability, long-term growth, and a hedge against inflation, making it a top investment choice.
+                   </div>
+                 </div>
+           
+                 <!-- Add more FAQ items as needed -->
+               </div>
+             </div>
+           
+             <!-- Right Information Section -->
+             <div class="w-full lg:w-1/3">
+               <h3 class="text-lg font-semibold text-gray-800">What We Do</h3>
+               <p class="mt-2 text-gray-600 text-sm">
+                 MyRonhomes is a recognized brand in the context of Farmlands and Farmvillas nearby Hyderabad. We have successfully curated the first-ever duct house concept in your weekend farmlands.
+               </p>
+               <h3 class="mt-8 text-lg font-semibold text-gray-800">QTT Assured</h3>
+               <p class="mt-2 text-gray-600 text-sm">
+                 A dedicated team that is fueled by a passion for quality, striving continuously to achieve customer delight stands behind the Myron brand.
+               </p>
+             </div>
+           </div>
+           
+     </section>
     <!-- Hero Section -->
-    <section class="py-16">
+    <section class="py-5">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">Contact Us</h2>
             <p class="text-center text-gray-600 mb-12">We'd love to hear from you! Fill out the form below and find our
@@ -193,6 +295,8 @@
             </div>
         </div>
     </section>
+      
+  
 
     <!-- Footer -->
     <section id="contact">
@@ -208,48 +312,45 @@
                             <h2 class="text-xl font-bold">Mayank Infra
                                 Developers</h2>
                         </div>
+                        <spam class="pb-2 mb-2">
+                            <p class="text-gray-400">Mayank Infra Developers, a trusted real estate name, delivers
+                                affordable housing for 10 years, prioritizing customer satisfaction, quality, and community
+                                sustainability to build legacies.</p>
+                        </spam>
                         <div class="flex space-x-4 mb-6">
-                            <p>Follow us on :
-                                <span class="flex">
-                                    <img style="padding: 0.10rem;margin-right: 5px;"
-                                        onclick="window.open('http://www.google.com', '_blank');"
-                                        src="assets/icons/facebook.png" width="5%">
-                                    <img style="padding: 0.10rem; margin: 0 5px;"
-                                        onclick="window.open('http://www.google.com', '_blank');"
-                                        src="assets/icons/instagram.png" width="5%">
-                                    <img style="padding: 0.10rem;margin: 0 5px;"
-                                        onclick="window.open('http://www.google.com', '_blank');"
-                                        src="assets/icons/twitter.png" width="5%">
-                                    <img style="padding: 0.10rem;margin: 0 5px;"
-                                        onclick="window.open('http://www.google.com', '_blank');"
-                                        src="assets/icons/whatsapp.png" width="5%">
-                                    <img style="padding: 0.10rem;margin: 0 5px;"
-                                        onclick="window.open('http://www.google.com', '_blank');"
-                                        src="assets/icons/youtube.png" width="5%">
-                                </span>
+                            
+<p>Follow us on :
+        <span class="flex">
+            <img style="padding: 0.10rem;margin-right: 5px;"
+                onclick="window.open('https://www.facebook.com/mayankinfradevelopers', '_blank');"
+                src="assets/icons/facebook.png" width="5%">
+            <img style="padding: 0.10rem; margin: 0 5px;"
+                onclick="window.open('https://www.instagram.com/mayankinfradevelopers/', '_blank');"
+                src="assets/icons/instagram.png" width="5%">
+            <img style="padding: 0.10rem;margin: 0 5px;"
+                onclick="window.open('http://www.google.com', '_blank');"
+                src="assets/icons/twitter.png" width="5%">
+            <img style="padding: 0.10rem;margin: 0 5px;"
+                onclick="window.open('http://www.google.com', '_blank');"
+                src="assets/icons/whatsapp.png" width="5%">
+            <img style="padding: 0.10rem;margin: 0 5px;"
+                onclick="window.open('http://www.google.com', '_blank');"
+                src="assets/icons/youtube.png" width="5%">
+        </span>
                         </div>
-                        <div class="relative mt-6">
-                            <form class="flex">
-                                <input type="email" placeholder="Enter Email"
-                                    class="flex-1 px-4 py-2 text-gray-700 rounded-full focus:outline-none" />
-                                <button type="submit"
-                                    class="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-4 py-2 ml-2 animate-bounce-on-hover">
-                                    <i class="fas fa-arrow-right"></i>
-                                </button>
-                            </form>
-                        </div>
+                        
                     </div>
                     <!-- Company Links -->
                     <div>
                         <h3 class="text-lg font-bold mb-4">Company</h3>
                         <ul class="space-y-2">
-                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
-                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Projects</a>
+                            <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                            <li><a href="projects.html" class="text-gray-400 hover:text-white transition duration-300">Projects</a>
                             </li>
-                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">About
+                            <li><a href="about-us.html" class="text-gray-400 hover:text-white transition duration-300">About
                                     Us</a>
                             </li>
-                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Contact
+                            <li><a href="contact-us.html" class="text-gray-400 hover:text-white transition duration-300">Contact
                                     Us</a>
                             </li>
                         </ul>
@@ -352,6 +453,23 @@
             });
         }
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const buttons = document.querySelectorAll('[data-target]');
+          buttons.forEach((button) => {
+            button.addEventListener('click', () => {
+              const target = document.querySelector(button.getAttribute('data-target'));
+              if (target.classList.contains('hidden')) {
+                target.classList.remove('hidden');
+                button.querySelector('span').textContent = '-';
+              } else {
+                target.classList.add('hidden');
+                button.querySelector('span').textContent = '+';
+              }
+            });
+          });
+        });
+      </script>
 </body>
 
 </html>
