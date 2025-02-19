@@ -146,7 +146,50 @@
         .hide {
             display: block;
         }
+        .InfroDev-vision-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        .mv-image-container,
+        .mv-text-container {
+            flex: 1 1 50%;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 0;
+        }
 
+        .mv-image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mv-image-container img {
+            width: 50%;
+            height: auto;
+            opacity: 0.9;
+            transition: transform var(--transition);
+        }
+
+        .mv-image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        .mv-text-container h2 {
+            font-size: 1.5rem;
+            color: #060049;
+            font-weight: bolder;
+            margin-bottom: 15px;
+        }
+        .mv-text-container p {
+            font-size: 2rem;
+            color: #060049;
+            font-weight: 400;
+            line-height: 1.5;
+        }
         @media screen and (min-width: 768px) {
             .show {
                 display: block;
@@ -276,13 +319,13 @@
                 <!-- <a href="#projects" class="bg-gold text-[#011E4A] px-6 py-3 rounded-full hover-scale">Explore Our
                     Projects</a> -->
             </div>
-            <img src="assets/images/Hero.jpg" alt="Mayank Infra Developers" />
+            <img src="assets/images/Projects/Hero.jpg" alt="Mayank Infra Developers" />
         </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="py-16 mt-4 mb-4 relative bg-cover bg-center"
-        style="background-image: url('assets/images/plots.jpg');">
+        style="background-image: url('assets/images/Projects/plots.jpg');">
         <div class="absolute inset-0 bg-white bg-opacity-80"></div> <!-- Light overlay for better content visibility -->
 
         <div class="container mx-auto px-4 relative z-10">
@@ -301,10 +344,11 @@
 
                         <!-- Decorative Curve -->
                         <div class="absolute -top-4 left-0 right-0 mx-auto w-20 h-4 bg-white rounded-b-full z-10"></div>
-
+                        <img src="./assets/images/Projects/Hero.jpg"  alt="Ongoing Project"
+                        class="w-full h-full object-cover rounded-lg">
                         <!-- Front Side -->
-                        <div class="absolute  inset-0 justify-items-center rounded-lg shadow-md backface-hidden pt-12 bg-cover"
-                            style="background-image: url('./assets/images/Hero.png');">
+                        <div class="absolute inset-0 justify-items-center rounded-lg shadow-md backface-hidden pt-12"
+                            >
                             <h4 class="text-lg font-semibold text-white text-center">Omkara</h4>
                             <p class="text-gray-600 text-center mt-2 text-sm text-white">Premium Luxurious Villa Plots,
                                 Zaheerabad
@@ -344,10 +388,11 @@
 
                         <!-- Decorative Curve -->
                         <div class="absolute -top-4 left-0 right-0 mx-auto w-20 h-4 bg-white rounded-b-full z-10"></div>
-
+                        <img src="./assets/images/Projects/Projects page screen 1.jpg" alt="Upcoming Project"
+                        class="w-full h-full object-cover rounded-lg">
                         <!-- Front Side -->
-                        <div class="absolute inset-0 justify-items-center rounded-lg shadow-md backface-hidden pt-12 bg-cover"
-                            style="background-image: url('./assets/images/plots.jpg');">
+                        <div class="absolute inset-0 justify-items-center rounded-lg shadow-md backface-hidden pt-12"
+                            >
                             <h4 class="text-lg font-semibold text-[#011E4A] text-center">Upcoming Project</h4>
                             <p class="text-[#011E4A] text-center mt-2 text-sm"><strong> Plot Ventures at Shadnagar &
                                     Athmakur, Sadashivpet </strong></p>
@@ -386,7 +431,7 @@
         <div class="container mx-auto px-4 relative z-10">
             <div class="grid md:grid-cols-1 lg:grid-cols-1 gap-8">
                 <div class="group perspective justify-items-center">
-                    <img src="./assets/images/OmkaraProjectmap2.JPG" style="cursor: pointer;"
+                    <img src="./assets/images/Projects/OmkaraProjectmap2.JPG" style="cursor: pointer; width: 50%;"
                         onclick="window.open('https://www.google.com/maps/place/https://www.google.com/maps/@17.6890446,77.5894324,16.01z?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D', '_blank')">
                 </div>
                 <!-- <div class="group perspective justify-items-center">
@@ -406,25 +451,26 @@
 
         </div>
     </section>
+   
 
 
     <!-- About Section -->
     <section id="about" class="py-12 bg-blue-50">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-[#011E4A] mb-8 fade-in text-center">About Mayank Infra Developers</h2>
-            <div class="flex flex-col md:flex-row items-center justify-between">
-                <div class="max-w-lg fade-in delay-300 text-center md:text-left">
-                    <p class="text-gray-600 mb-6">
-                        We are a leading real estate developer committed to providing high-quality, well-located open
-                        plots
-                        that meet the diverse needs of modern homeowners and investors. With years of experience and a
-                        passion
-                        for excellence, we transform landscapes into opportunities.
-                    </p>
-                </div>
-                <img src="assets/images/about-us.jpg" alt="About Image"
-                    class="w-[300px] h-[250px] fade-in delay-500 rounded-lg shadow-md mt-6 md:mt-0">
+        <h2 class="text-3xl font-bold text-[#011E4A] mb-8 fade-in text-center">About Mayank Infra Developers</h2> 
+        <div class="InfroDev-vision-row">
+            <div class="mv-image-container">
+                <img src="assets/images/Projects/Project page screen 4.jpg" alt="Mission Icon">
             </div>
+            <div class="mv-text-container mission-text-container">
+                <p class="text-gray-600 mb-6">
+                    We are a leading real estate developer committed to providing high-quality, well-located open
+                    plots
+                    that meet the diverse needs of modern homeowners and investors. With years of experience and a
+                    passion
+                    for excellence, we transform landscapes into opportunities.
+                </p>
+            </div>
+           
         </div>
     </section>
 
