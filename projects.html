@@ -123,7 +123,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            border-radius: 0.75rem;
+            border-radius: 0.20rem;
             /* Matches rounded-lg in Tailwind */
         }
 
@@ -324,156 +324,156 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-16 mt-4 mb-4 relative bg-cover bg-center"
-        style="background-image: url('assets/images/Projects/plots.jpg');">
-        <div class="absolute inset-0 bg-white bg-opacity-80"></div> <!-- Light overlay for better content visibility -->
 
-        <div class="container mx-auto px-4 relative z-10">
-            <!-- Section Title -->
-            <h2 class="text-3xl font-bold text-center text-[#011E4A] mb-12 fade-in">Our Projects</h2>
+      <section id="projects" class="py-16 mt-4 mb-4 relative bg-cover bg-center"
+    style="background-image: url('assets/images/Projects/plots.jpg');">
+    <div class="absolute inset-0 bg-white bg-opacity-80"></div> <!-- Light overlay for better content visibility -->
 
-            <!-- Projects Cards -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
-                <!-- Ongoing Project Card -->
-                <div class="group perspective justify-items-center">
-                    <div
-                        class="relative Width100 h-120 rounded-lg shadow-lg transform-style preserve-3d hover:rotate-y-180 transition-transform duration-700 border-2">
-                        <!-- Logo at the Top with Rounded Style -->
-                        <img src="assets/images/OmKaraLogo_1.png" alt="Omkara Logo"
-                            class="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full bg-white border border-gray-200 shadow-md z-20 object-contain">
+    <div class="container mx-auto px-4 relative z-10">
+        <!-- Section Title -->
+        <h2 class="text-3xl font-bold text-center text-[#011E4A] mb-12 fade-in">Our Projects</h2>
 
-                        <!-- Decorative Curve -->
-                        <div class="absolute -top-4 left-0 right-0 mx-auto w-20 h-4 bg-white rounded-b-full z-10"></div>
-                        <img src="./assets/images/Projects/Hero.jpg"  alt="Ongoing Project"
+        <!-- Projects Cards -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+            <!-- Ongoing Project Card -->
+            <div class="group perspective justify-items-center">
+                <div
+                    class="relative w-full h-[300px] rounded-lg shadow-lg transform-style preserve-3d hover:rotate-y-180 transition-transform duration-700 border-2">
+                    <!-- Logo at the Top with Rounded Style -->
+                    <img src="assets/images/OmKaraLogo_1.png" alt="Omkara Logo"
+                        class="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full bg-white border border-gray-200 shadow-md z-20 object-contain">
+
+                    <!-- Decorative Curve -->
+                    <div class="absolute -top-4 left-0 right-0 mx-auto w-20 h-4 bg-white rounded-b-full z-10"></div>
+
+                    <!-- Image with Object Cover -->
+                    <img src="./assets/images/Projects/Hero.jpg" alt="Ongoing Project"
                         class="w-full h-full object-cover rounded-lg">
-                        <!-- Front Side -->
-                        <div class="absolute inset-0 justify-items-center rounded-lg shadow-md backface-hidden pt-12"
-                            >
-                            <h4 class="text-lg font-semibold text-white text-center">Omkara</h4>
-                            <p class="text-gray-600 text-center mt-2 text-sm text-white">Premium Luxurious Villa Plots,
-                                Zaheerabad
-                            </p>
-                        </div>
 
-                        <!-- Back Side -->
-                        <div
-                            class="absolute inset-0 p-4 bg-gray-100 flex flex-col justify-center items-center rounded-lg shadow-md rotate-y-180 backface-hidden pt-12">
-                            <h4 class="font-semibold text-[#011E4A] mb-4 FaSmaller">We are excited to announce our
-                                ongoing Omkara project in Zaheerabad. This project is DTCP & RERA approved, ensuring
-                                that it meets all legal and regulatory requirements for safety and development.</h4>
-                            <ul class="FaSmaller">
-                                <li><b>Strategic Location:</b> Omkara is situated in one of the most promising areas of
-                                    Zaheerabad Municipality, offering easy access to <b>NIMZ</b>, transportation,
-                                    commercial hubs, and essential amenities.</li>
-                                <li><b>Approved and Reliable:</b> Being a DTCP-approved project, it adheres to the
-                                    highest standards of quality, legal compliance, and safety, offering peace of mind
-                                    to our investors.</li>
-                                <li><b>Modern Infrastructure:</b> The project is equipped with modern infrastructure,
-                                    ensuring a sustainable and high-quality living experience for its residents.</li>
-                            </ul>
-                            <p class="FaSmaller">Stay tuned for more details about the <b>Omkara</b> project as it
-                                progresses toward completion.
-                            </p>
-                        </div>
+                    <!-- Front Side -->
+                    <div class="absolute inset-0 flex flex-col justify-center items-center rounded-lg shadow-md backface-hidden pt-12 text-white">
+                        <h4 class="text-lg font-semibold text-white text-center">Omkara</h4>
+                        <p class="text-center mt-2 text-sm">Premium Luxurious Villa Plots, Zaheerabad</p>
+                    </div>
+
+                    <!-- Back Side -->
+                    <div
+                        class="absolute inset-0 p-4 bg-gray-100 flex flex-col justify-center items-center rounded-lg shadow-md rotate-y-180 backface-hidden pt-12 overflow-auto">
+                        <h4 class="font-semibold text-[#011E4A] mb-4 FaSmaller">
+                            We are excited to announce our ongoing Omkara project in Zaheerabad. This project is DTCP & RERA approved.
+                        </h4>
+                        <ul class="FaSmaller">
+                            <li><b>Strategic Location:</b> Omkara is situated in a prime area with easy access to NIMZ.</li>
+                            <li><b>Approved and Reliable:</b> DTCP-approved project with legal compliance.</li>
+                            <li><b>Modern Infrastructure:</b> Ensuring a high-quality living experience.</li>
+                        </ul>
+                        <p class="FaSmaller">Stay tuned for more details about the <b>Omkara</b> project.</p>
                     </div>
                 </div>
+            </div>
 
-                <!-- Upcoming Project Card -->
-                <div class="group perspective justify-items-center">
-                    <div
-                        class="relative Width100 h-120 rounded-lg shadow-lg transform-style preserve-3d hover:rotate-y-180 transition-transform duration-700 border-2">
-                        <!-- Logo at the Top with Rounded Style -->
-                        <img src="assets/icons/construction_15901364.png" alt="Upcoming Project Logo"
-                            class="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full bg-white border border-gray-200 shadow-md z-20">
+            <!-- Upcoming Project Card -->
+            <div class="group perspective justify-items-center">
+                <div
+                    class="relative w-full h-[300px] rounded-lg shadow-lg transform-style preserve-3d hover:rotate-y-180 transition-transform duration-700 border-2">
+                    <!-- Logo at the Top with Rounded Style -->
+                    <img src="assets/icons/construction_15901364.png" alt="Upcoming Project Logo"
+                        class="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full bg-white border border-gray-200 shadow-md z-20 object-contain">
 
-                        <!-- Decorative Curve -->
-                        <div class="absolute -top-4 left-0 right-0 mx-auto w-20 h-4 bg-white rounded-b-full z-10"></div>
-                        <img src="./assets/images/Projects/Projects page screen 1.jpg" alt="Upcoming Project"
+                    <!-- Decorative Curve -->
+                    <div class="absolute -top-4 left-0 right-0 mx-auto w-20 h-4 bg-white rounded-b-full z-10"></div>
+
+                    <!-- Image with Object Cover -->
+                    <img src="./assets/images/Projects/Projects page screen 1.jpg" alt="Upcoming Project"
                         class="w-full h-full object-cover rounded-lg">
-                        <!-- Front Side -->
-                        <div class="absolute inset-0 justify-items-center rounded-lg shadow-md backface-hidden pt-12"
-                            >
-                            <h4 class="text-lg font-semibold text-[#011E4A] text-center">Upcoming Project</h4>
-                            <p class="text-[#011E4A] text-center mt-2 text-sm"><strong> Plot Ventures at Shadnagar &
-                                    Athmakur, Sadashivpet </strong></p>
-                        </div>
 
-                        <!-- Back Side -->
-                        <div
-                            class="absolute inset-0 bg-gray-100 p-4 flex flex-col justify-center items-center rounded-lg shadow-md rotate-y-180 backface-hidden pt-12">
-                            <h4 class="text-lg font-semibold text-[#011E4A]">Upcoming Project</h4>
-                            <h4 class="font-semibold text-[#011E4A] mb-4 FaSmaller">We are thrilled to announce our
-                                upcoming projects in Bangalore HIghway at Shadnagar, Mumbai Highway at Athmakur and
-                                Sadashivpet, featuring Premium Villa plots Projects. These upcoming developments promise
-                                to provide premium, affordable plots in highly sought-after areas</h4>
-                            <ul class="FaSmaller">
-                                <li><b>Prime Locations:</b> These areas are rapidly developing, making them ideal for
-                                    both residential and investment purposes.</li>
-                                <li><b>Affordable Plots:</b>
-                                    Our upcoming ventures will offer high-quality plots at competitive
-                                    prices, allowing our customers to invest in emerging areas with long-term growth
-                                    potential.
-                                </li>
-                            </ul>
-                            <p class="FaSmaller">Stay tuned for more details about the <b>Upcoming</b> project as it
-                                progresses toward completion.
-                            </p>
-                        </div>
+                    <!-- Front Side -->
+                    <div class="absolute inset-0 flex flex-col  rounded-lg shadow-md backface-hidden pt-12">
+                        <h4 class="text-lg font-semibold text-white text-center">Upcoming Project</h4>
+                        <!-- <p class="text-center mt-2 text-sm"><strong> Plot Ventures at Shadnagar & Athmakur, Sadashivpet </strong></p> -->
+                    </div>
+
+                    <!-- Back Side -->
+                    
+                    <div
+                        class="absolute inset-0 w-full h-full rotate-y-180 backface-hidden flex flex-col justify-center items-center rounded-lg shadow-md bg-gray-100 p-4 overflow-auto">
+                        <h4 class="text-lg font-semibold text-[#011E4A]">Upcoming Project</h4>
+                        <h4 class="font-semibold text-[#011E4A] mb-4 FaSmaller">
+                            Our upcoming projects are in Bangalore Highway at Shadnagar, Mumbai Highway at Athmakur, and Sadashivpet.
+                        </h4>
+                        <ul class="FaSmaller">
+                            <li><b>Prime Locations:</b> Rapidly developing areas.</li>
+                            <li><b>Affordable Plots:</b> Competitive prices for long-term growth.</li>
+                        </ul>
+                        <p class="FaSmaller">Stay tuned for more details about the <b>Upcoming</b> project.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="w-full justify-items-center">
-            <img class="fade-in justify-items-center text-center" src="./assets/images/OmKaraLogo.png" alt="" srcset=""
-                style="height: 4rem;">
+    </div>
 
-        </div>
-        <div class="container mx-auto px-4 relative z-10">
-            <div class="grid md:grid-cols-1 lg:grid-cols-1 gap-8">
-                <div class="group perspective justify-items-center">
-                    <img src="./assets/images/Projects/OmkaraProjectmap2.JPG" style="cursor: pointer; width: 50%;"
-                        onclick="window.open('https://www.google.com/maps/place/https://www.google.com/maps/@17.6890446,77.5894324,16.01z?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D', '_blank')">
-                </div>
-                <!-- <div class="group perspective justify-items-center">
-                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                        <iframe 
-                          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d237.89042157086894!2d78.38611321951883!3d17.447900337978705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1734961968998!5m2!1sen!2sin" 
-                          width="100%" 
-                          height="100%" 
-                          style="border:0;" 
-                          allowfullscreen="" 
-                          loading="lazy" 
-                          referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                      </div>
-                </div> -->
+    <!-- Logo Section -->
+    <div class="w-full flex justify-center mt-8">
+        <img class="fade-in" src="./assets/images/OmKaraLogo.png" alt="Omkara Logo" style="height: 4rem;">
+    </div>
+
+    <!-- Map Section -->
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="grid md:grid-cols-1 lg:grid-cols-1 gap-8">
+            <div class="group perspective flex justify-center">
+                <!-- Map Image with Clickable Link -->
+                <img src="./assets/images/Projects/OmkaraProjectmap2.JPG"
+                    class="w-1/2 h-[100px] object-contain cursor-pointer"
+                    onclick="window.open('https://www.google.com/maps/place/https://www.google.com/maps/@17.6890446,77.5894324,16.01z?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D', '_blank')">
             </div>
 
+            <!-- Embedded Google Map -->
+            <!-- Uncomment if you want an embedded map -->
+            <!-- <div class="group perspective justify-items-center">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d237.89042157086894!2d78.38611321951883!3d17.447900337978705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1734961968998!5m2!1sen!2sin"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div> -->
         </div>
-    </section>
+    </div>
+      </section>
+
+   
    
 
 
     <!-- About Section -->
     <section id="about" class="py-12 bg-blue-50">
-        <h2 class="text-3xl font-bold text-[#011E4A] mb-8 fade-in text-center">About Mayank Infra Developers</h2> 
-        <div class="InfroDev-vision-row">
-            <div class="mv-image-container">
-                <img src="assets/images/Projects/Project page screen 4.jpg" alt="Mission Icon">
+        <h2 class="text-3xl font-bold text-[#011E4A] mb-8 fade-in text-center">
+            About Mayank Infra Developers
+        </h2> 
+    
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center md:items-start justify-center gap-6">
+                <!-- Image Container -->
+                <div class="w-1/2 md:w-1/5 max-w-full h-auto">
+                    <img src="assets/images/Projects/Project page screen 4.jpg" alt="Mission Icon"
+                        class="w-full h-auto rounded-lg shadow-md object-cover">
+                </div>
+    
+                <!-- Text Container -->
+                <div class="md:w-4/5 text-center md:text-left">
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        We are a leading real estate developer committed to providing high-quality, well-located 
+                        open plots that meet the diverse needs of modern homeowners and investors. 
+                        With years of experience and a passion for excellence, we transform landscapes into opportunities.
+                    </p>
+                </div>
             </div>
-            <div class="mv-text-container mission-text-container">
-                <p class="text-gray-600 mb-6">
-                    We are a leading real estate developer committed to providing high-quality, well-located open
-                    plots
-                    that meet the diverse needs of modern homeowners and investors. With years of experience and a
-                    passion
-                    for excellence, we transform landscapes into opportunities.
-                </p>
-            </div>
-           
         </div>
     </section>
-
+    
+    
+    
 
 
     <!-- Footer -->
