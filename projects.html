@@ -312,7 +312,7 @@
         <!-- Hero Section -->
         <div class="absolute inset-0 bg-cover bg-center opacity-10"
             style="background-image: url('assets/images/bg-house.webp');"></div>
-        <div class="container mx-auto px-4 relative z-10 justify-items-center">
+        <div class="container mx-auto px-4 relative z-10 justify-items-center mt-3">
             <div class="fade-in">
                 <h1 class="text-2xl font-bold mb-4">Building Dreams, Creating Legacies</h1>
                 <p class="mb-8">Mayank Infra Developers is committed to transforming landscapes into opportunities.</p>
@@ -323,6 +323,8 @@
         </div>
     </section>
 
+    <!-- Location Highlights Section -->
+    
     <!-- Projects Section -->
 
       <section id="projects" class="py-16 mt-4 mb-4 relative bg-cover bg-center"
@@ -471,7 +473,73 @@
             </div>
         </div>
     </section>
-    
+    <section id="location-highlights" class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-[#011E4A] mb-8">Location Highlights</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Add your location highlights content here -->
+            </div>
+            <div class="text-center p-6 rounded-lg">
+                <a onclick="openBrochureDialog()"
+                    class="flex justify-center items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                    <img src="./assets/icons/pdf_4726010.png" alt="PDF Icon" class="w-6 h-6 mr-2" />
+                    <span>Download Brochure</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brochure Dialog -->
+    <div id="brochureDialog" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-96">
+            <h3 class="text-xl font-bold mb-4">Download Brochure</h3>
+            <form id="brochureForm">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded-lg" required>
+                </div>
+                <div class="mb-4">
+                    <label for="contact" class="block text-gray-700">Contact Number</label>
+                    <input type="text" id="contact" name="contact" class="w-full px-3 py-2 border rounded-lg" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-lg" required>
+                </div>
+                <div class="flex justify-end">
+                    <button type="button" onclick="closeBrochureDialog()"
+                        class="px-4 py-2 bg-gray-300 rounded-lg mr-2">Cancel</button>
+                    <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded-lg">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function openBrochureDialog() {
+            document.getElementById('brochureDialog').classList.remove('hidden');
+        }
+
+        function closeBrochureDialog() {
+            document.getElementById('brochureDialog').classList.add('hidden');
+        }
+
+        document.getElementById('brochureForm').addEventListener('submit', function (event) {
+            downloadPDF();
+            event.preventDefault();
+            // Add your form submission logic here
+            // For example, send the form data to your server and trigger the brochure download
+            closeBrochureDialog();
+            
+        });
+        function downloadPDF() {
+            const link = document.createElement('a');
+            link.href = './assets/pdf/Omkara_Project.pdf';
+            link.download = 'Omkara_Project_Details.pdf';
+            link.click();
+        }
+    </script>
+
     
     
 
