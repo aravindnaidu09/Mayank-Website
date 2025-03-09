@@ -327,7 +327,7 @@
     
     <!-- Projects Section -->
 
-      <section id="projects" class="py-16 mt-4 mb-4 relative bg-cover bg-center"
+      <section id="projects" class="pt-16 pb-8 mt-4 mb-4 relative bg-cover bg-center"
     style="background-image: url('assets/images/Projects/plots.jpg');">
     <div class="absolute inset-0 bg-white bg-opacity-80"></div> <!-- Light overlay for better content visibility -->
 
@@ -460,22 +460,30 @@
 
 
     <!-- About Section -->
-    <section id="about" class="py-6 bg-blue-50">
+    <section id="about" class="py-12 bg-blue-50">
         <div class="container mx-auto px-4">
-            <div class="w-full">
-                    <h2 class="text-3xl font-bold text-center text-[#011E4A]">About Us</h2>
-                    <p class="text-[#011E4A] justify-self-center lg:w-1/3 md:w-full">Mayank Infra Developers, a trusted real estate name, delivers
-                        affordable housing for 10 years, prioritizing customer satisfaction, quality, and community
-                        sustainability to build legacies.</p>
-             
-                    <img class="fade-in justify-self-center lg:w-1/3 md:w-full" src="./assets/images/NewImgae/Project page screen 4.jpg" alt="Omkara Logo" height="100px">
+            <div class="w-full flex md:flex-row items-center justify-center mt-8  md:h-[400px] lg:h-[500px]">
+                <!-- Left: Image -->
+                <div class="w-1/2 md:w-1/2 h-[300px] md:h-full">
+                    <img class="w-full object-cover rounded-lg shadow-lg fade-in" 
+                         src="./assets/images/NewImgae/Project page screen 4.jpg" 
+                         alt="Omkara Logo">
                 </div>
-               
+    
+                <!-- Right: Text -->
+                <div class="w-1/4 md:w-full flex flex-col justify-center text-center md:text-left h-full">
+                    <h2 class="text-3xl font-bold text-[#011E4A] mb-6">
+                        About Us
+                    </h2>
+                    <p class="text-gray-400 text-lg leading-relaxed">
+                        Mayank Infra Developers, a trusted real estate name, delivers affordable housing for 10 years, 
+                        prioritizing customer satisfaction, quality, and community sustainability to build legacies.
+                    </p>
+                </div>
             </div>
+        </div>
     </section>
     
-    
-
 
     <!-- Brochure Dialog -->
     <div id="brochureDialog" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
