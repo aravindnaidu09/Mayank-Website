@@ -509,9 +509,10 @@
         }
 
         .mv-image-container {
-            display: flex;
+            /* display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: center; */
+            display: contents;
         }
 
         .mv-image-container img {
@@ -602,6 +603,7 @@
                 width: 120px;
                 height: 40px;
             }
+            
         }
 
         .chairman-container {
@@ -1049,7 +1051,7 @@
 
     <!-- Hero Section (separate from navbar) -->
     <section class="hero-section">
-        <div class="hero-content-container">
+        <div class="hero-content-container py-4">
             <div class="hero-text-container">
                 <!-- Decorative Shapes -->
                 <div class="shape-container">
@@ -1065,7 +1067,9 @@
                     </p>
                 </div>
             </div>
-            <div class="hero-image-container"></div>
+            <div class="hero-image-container">
+                <img src="./assets/images/removeFile/About_Us_Hero.jpg" alt="About Us Hero Image">
+            </div>
         </div>
     </section>
 
@@ -1159,9 +1163,9 @@
             </div>
         </div>
         <!-- Mission Section (Image Left, Text Right) -->
-        <div class="mission-vision-row mission-row">
+        <div class="mission-vision-row mission-row justify-center">
             <div class="mv-image-container">
-                <img src="assets/images/Aboutus/Our mission.jpg" style="width: 50%;" alt="Mission Icon">
+                <img src="assets/images/Aboutus/Our mission.jpg" style="width: auto;height: 350px;"  alt="Mission Icon">
             </div>
             <div class="mv-text-container mission-text-container">
                 <h2>Our Mission</h2>
@@ -1182,7 +1186,7 @@
         </div>
 
         <!-- Vision Section (Text Left, Image Right) -->
-        <div class="mission-vision-row vision-row">
+        <div class="mission-vision-row vision-row justify-center">
             <div class="mv-text-container vision-text-container">
                 <h2>Our Vision</h2>
                 <p>Our vision is to become one of the leading names in the real estate industry by continuously delivering the finest properties and redefining the standards of quality and trust in the market. We aim to:</p>
@@ -1201,7 +1205,7 @@
                 </ul>
             </div>
             <div class="mv-image-container">
-                <img src="assets/images/Aboutus/Our Vision.jpg" style="width: 50%;" alt="Vision Icon">
+                <img src="assets/images/Aboutus/Our Vision.jpg" style="width: auto;height: 350px;" alt="Vision Icon">
             </div>
         </div>
     </section>
