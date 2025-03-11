@@ -191,7 +191,7 @@
     </div>
     
     <!-- Main Content -->
-    <div class="container mx-auto mt-2 px-4 mb-6 flex flex-row md:flex-row gap-6">
+    <div class="container mx-auto mt-2 px-4 mb-6 flex lg:flex-row md:flex-col gap-6">
         <!-- Sidebar - Job Openings -->
         <div class="w-1/2 md:w-1/4 bg-[#011E4A]  text-white p-4 rounded-lg">
             <h2 class="text-lg font-semibold mb-4">Current Openings</h2>
@@ -214,9 +214,20 @@
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <input type="email" placeholder="Your Email" class="w-full p-2 border rounded" required>
-                    <input type="text" placeholder="Applying For" class="w-full p-2 border rounded" required>
+                    <select class="w-full p-2 border rounded" required>
+                        <option value="" disabled selected>Applying For</option>
+                        <option value="Tele Sales Executive">Tele Sales Executive</option>
+                        <option value="Direct Sales Executive">Direct Sales Executive</option>
+                        <option value="Business Manager">Business Manager</option>
+                        <option value="DOM/DM - Sales">DOM/DM - Sales</option>
+                        <option value="Marketing Directors">Marketing Directors</option>
+                    </select>
                 </div>
-                <textarea placeholder="Tell us something about you" class="w-full p-2 border rounded h-24" required></textarea>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <textarea placeholder="Tell us something about you" class="w-full p-2 border rounded h-24" required></textarea>
+                    <input type="file" accept=".pdf,.doc,.docx" class="w-full p-2 border rounded" required>
+                </div>
+                
                 <button type="submit" class="w-full bg-[#011E4A]  text-white py-2 rounded hover:bg-[#011E4A] ">Submit</button>
             </form>
         </div>
@@ -256,16 +267,7 @@
 
         </span>
                         </div>
-                        <div class="relative mt-6">
-                            <form class="flex">
-                                <input type="email" placeholder="Enter Email"
-                                    class="flex-1 px-4 py-2 text-[#96770b] rounded-full focus:outline-none" />
-                                <button type="submit"
-                                    class="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-4 py-2 ml-2 animate-bounce-on-hover">
-                                    <i class="fas fa-arrow-right"></i>
-                                </button>
-                            </form>
-                        </div>
+                        
                     </div>
                     <!-- Company Links -->
                     <div>
